@@ -1,0 +1,501 @@
+client_id,client_name,first_name,last_name,company_name,client_type,email,email_secondary,phone,phone_mobile,fax,address_line1,address_line2,city,state_province,postal_code,country,billing_address,created_on,modified_on,status,notes,credit_limit,payment_terms
+CL-0001,Helen Moore,Helen,Moore,,,helen.moore@example.com,,337 841 7612,+1 274 902 1071,,7812 Oak Blvd,Suite 977,Denver,CO,95153,BR,,16/06/2023,09/12/2024,inactive,Legacy client record,35045.8,COD
+CL-0002,"Anderson, Helen",Helen,Anderson,,individual,helen.anderson@example.com,,982.805.3881,+1 316 899 8934,,2666 Main Ave,,Indianapolis,IN,29834,BR,"2666 Main Ave, Indianapolis, IN 29834",07-11-2020,,active,Legacy client record,39770.16,COD
+CL-0003,"Collins, William",William,Collins,,individual,william.collins@example.com,,400 862 6504,871-783-4355,,2669 Oak Blvd,,Oklahoma City,OK,18636,FR,,01 June 2019,"October 17, 2024",,,,COD
+CL-0004,Automotive Parts Inc Corp,,,Automotive Parts Inc Corp,,,,532.815.3378,(861) 229-9722,,3510 Washington St,Suite 685,Albuquerque,NM,16962,Japan,,29-08-2023,09-27-2024,Active,,,
+CL-0005,"Hall, Nancy",Nancy,Hall,,individual,nancy.hall@example.com,,609-428-5504,219 460 6829,,9199 Main Dr,Suite 740,Oklahoma City,OK,33689,France,"9199 Main Dr, Oklahoma City, OK 33689",07/01/2023,,Active,Legacy client record,,
+CL-0006,"Lee, Karen",Karen,Lee,,person,karen.lee@example.com,,988-945-8427,+1 909 792 8148,,1349 Second St,,Oklahoma City,OK,79664,Germany,"1349 Second St, Oklahoma City, OK 79664",2023-06-22,,inactive,,43899.53,30 days
+CL-0007,Ruth Jones,Ruth,Jones,,,,,344.204.2918,1-391-559-4229,,5887 Oak Dr,,Louisville,KY,60365,United States,,"November 04, 2018",10/04/23,Active,,39229.9,Net 30
+CL-0008,DataDyne Inc,,,DataDyne Inc,corporation,legal@datadyneinc.com,,+1 233 477 7043,,,9563 Main Ave,,Las Vegas,NV,42373,IN,,09-03-2023,20-05-2024,suspended,,19849.95,COD
+CL-0009,Chemical Corp,,,Chemical Corp,company,legal_at_chemicalcorp.com,,+1-674-708-5717,(308) 879-6100,889.574.5356,1235 Main St,Suite 147,Washington,DC,93706,US,,2018/02/03,,Active,Legacy client record,4365.8,
+CL-0010,"Hernandez, Sandra",Sandra,Hernandez,,person,,,+1-755-241-8662,1-474-618-9392,,4963 Main Dr,,Denver,CO,52177,AU,"4963 Main Dr, Denver, CO 52177",25-02-2021,,Active,,5523.78,
+CL-0011,InnovaSoft,,,InnovaSoft,,,,816-284-9248,1-638-552-6268,,8381 Main Blvd,,Baltimore,MD,90190,GB,"8381 Main Blvd, Baltimore, MD 90190",12-19-2021,"April 14, 2024",active,Legacy client record,29346.47,15 days
+CL-0012,Automotive Parts Inc Corp,,,Automotive Parts Inc Corp,corporation,legal@automotivepartsinccorp.com,,+1-624-476-6388,,,7728 Park Blvd,,Baltimore,MD,79937,France,,16 October 2020,,suspended,,33846.25,
+CL-0013,"Wilson, Dorothy",Dorothy,Wilson,,,dorothy.wilson@example.com,,+1 244 214 3807,+1 376 489 8084,,8270 Park Way,,Nashville,TN,88915,Japan,"8270 Park Way, Nashville, TN 88915",2021-10-13,01/30/2024,suspended,,25883.63,
+CL-0014,Pharmaceuticals Inc Corp,,,Pharmaceuticals Inc Corp,company,legal@pharmaceuticalsinccorp.com,,+1-658-865-4353,,,1640 Oak St,Suite 222,Indianapolis,IN,40898,IN,"1640 Oak St, Indianapolis, IN 40898",05/01/2020,,inactive,Legacy client record,,COD
+CL-0015,"White, Paul",Paul,White,,,paul.white@example.com,,821 483 1505,,,4301 Lincoln Blvd,,Nashville,TN,33052,AU,,,,Active,,12047.37,
+CL-0016,TechnoLogic,,,TechnoLogic,corporation,legal@technologic.com,,904.637.6913,(918) 351-8874,,5454 Park Blvd,,Austin,TX,37681,AU,,07-30-2022,02/02/2024,inactive,,43640.84,COD
+CL-0017,"Lewis, George",George,Lewis,,person,george.lewis@example.com,,1-782-490-1820,(926) 967-1866,,2588 Oak Blvd,,Washington,DC,57266,China,,08/12/18,,active,,33659.55,
+CL-0018,"Campbell, Karen",Karen,Campbell,,individual,karen.campbell@example.com,,+1-717-916-9782,301-981-5134,,7024 Washington Way,,Nashville,TN,97434,United Kingdom,,02-18-2022,20/11/2023,ACTIVE,Legacy client record,22592.85,
+CL-0019,DataGrid LLC,,,DataGrid LLC,company,legal@datagridllc.com,,701 905 4208,,,2755 Second St,,Boston,MA,66357,JP,,05-10-2018,04-16-2024,Active,,37967.02,COD
+CL-0020,"Roberts, Donna",Donna,Roberts,,person,donna.roberts@example.com,,1-564-515-7948,+1-805-572-9294,,2813 Second St,,Washington,DC,62646,France,,02/27/19,2023-09-18,active,Legacy client record,22980.28,15 days
+CL-0021,"Hernandez, Carol",Carol,Hernandez,,person,carol.hernandez@example.com,,+1-742-721-2245,992 564 1872,+1 516 788 3504,9285 Main Dr,,San Antonio,TX,92340,AU,"9285 Main Dr, San Antonio, TX 92340",06/22/2023,"January 21, 2023",,Legacy client record,,
+CL-0022,Jessica Phillips,Jessica,Phillips,,individual,jessica.phillips@example.com,,213 886 2555,,,8468 Lincoln Blvd,,Milwaukee,WI,36593,Japan,"8468 Lincoln Blvd, Milwaukee, WI 36593",06/21/2023,01/28/23,active,Legacy client record,11712.62,30 days
+CL-0023,"Roberts, Mary",Mary,Roberts,,individual,mary.roberts@example.com,,N/A,+1-315-272-5039,,9394 Lincoln St,,Washington,DC,17345,BR,,2019/07/04,TBD,active,,43904.36,COD
+CL-0024,"Gomez, Donna",Donna,Gomez,,individual,donna.gomez@example.com,,+1-409-859-9399,+1-766-297-4551,,7766 Second Way,,Austin,TX,23538,Canada,,05/08/19,,ACTIVE,,,30 days
+CL-0025,"Rivera, Deborah",Deborah,Rivera,,person,deborah.rivera@example.com,,+1 403 808 2935,,,7396 Park Way,,Nashville,TN,13890,US,,08 January 2022,,active,Legacy client record,4318.48,Net 30
+CL-0026,"Morales, Nancy",Nancy,Morales,,,nancy.morales@example.com,,464.909.6568,+1-952-779-3983,,174 Park St,,Washington,DC,44474,Brazil,"174 Park St, Washington, DC 44474",27/06/21,,inactive,,15634.54,30 days
+CL-0027,"Ramirez, Paul",Paul,Ramirez,,person,paul.ramirez@example.com,,1-597-445-9977,676-281-1222,,5274 Washington Ave,,Detroit,MI,10870,India,"5274 Washington Ave, Detroit, MI 10870",29/05/23,03/19/2024,,,,30 days
+CL-0028,"King, Ryan",Ryan,King,,person,ryan.king@example.com,,+1-320-446-1462,1-539-869-9229,,5080 Main Ave,,Dallas,TX,19168,United States,,18-05-2019,11/01/2024,,,36227.32,
+CL-0029,"Collins, Karen",Karen,Collins,,,karen.collins@example.com,,+1 992 325 7619,,1-913-517-8097,6194 Second Blvd,Suite 518,Austin,TX,57465,China,,20 July 2018,14/12/2023,Active,,5739.55,Net 30
+CL-0030,"Taylor, John",John,Taylor,,person,john.taylor@example.com,,(850) 919-1248,1-926-992-8485,,2575 Park Ave,,Charlotte,NC,70618,Japan,,"May 27, 2019","June 06, 2024",,Legacy client record,39852.18,COD
+CL-0031,Joseph Collins,Joseph,Collins,,,joseph.collins@example.com,,1-707-700-9663,291-482-1566,,9307 Park Blvd,Suite 747,Los Angeles,CA,89782,Canada,"9307 Park Blvd, Los Angeles, CA 89782",2021-11-22,,suspended,,36724.92,Net 30
+CL-0032,"Robinson, Charles",Charles,Robinson,,person,charles.robinson@example.com,,+1 389 638 7394,,,2273 Washington St,,Boston,MA,73474,DE,"2273 Washington St, Boston, MA 73474",10-04-2020,12-13-2024,suspended,,1499.65,
+CL-0033,"Phillips, Mary",Mary,Phillips,,individual,mary.phillips@example.com,,400-202-1547,+1-428-572-5845,,4805 First St,Suite 101,Louisville,KY,76073,Germany,,16/08/23,,,,23434.71,Net 30
+CL-0034,"Morales, Sarah",Sarah,Morales,,person,sarah.morales@example.com,,781.394.3634,1-697-361-3747,(833) 439-8933,7162 First St,,Philadelphia,PA,25376,China,,10-31-2018,,ACTIVE,,32523.63,
+CL-0035,InnovaSoft,,,InnovaSoft,company,legal@innovasoft.com,,1-315-457-4943,,,3019 Lincoln Way,,Oklahoma City,OK,79880,China,,26 June 2019,,,,,15 days
+CL-0036,"Jones, Donald",Donald,Jones,,individual,donald.jones@example.com,,689-695-2290,1-775-356-4638,,1627 Washington St,,Baltimore,MD,17080,AU,"1627 Washington St, Baltimore, MD 17080",29 June 2019,03-07-2024,suspended,,22498.29,
+CL-0037,Carol Anderson,Carol,Anderson,,,carol.anderson@example.com,,661 530 4792,,,4204 Oak Dr,Suite 894,Detroit,MI,21367,United States,"4204 Oak Dr, Detroit, MI 21367","March 18, 2020",,ACTIVE,,25871.5,15 days
+CL-0038,SmartSystems,,,SmartSystems,company,legal@smartsystems.com,,1-993-394-4171,+1-272-545-7319,,5400 Washington Blvd,Suite 121,Jacksonville,FL,98892,UK,"5400 Washington Blvd, Jacksonville, FL 98892",26/04/2018,,ACTIVE,Legacy client record,8350.07,Net 30
+CL-0039,"Campbell, Sandra",Sandra,Campbell,,individual,sandra.campbell@example.com,,1-246-386-8140,1-736-551-3291,,5358 Oak Ave,,Washington,DC,94312,CA,"5358 Oak Ave, Washington, DC 94312",11-24-2020,18 February 2024,active,Legacy client record,,
+CL-0040,"Nguyen, Carol",Carol,Nguyen,,,carol.nguyen@example.com,,1-968-983-2459,1-907-266-2129,,5237 Washington Way,,El Paso,TX,80758,BR,,12/10/22,13-09-2023,active,Legacy client record,15510.0,
+CL-0041,InfoSys,,,InfoSys,,legal@infosys.com,,715-627-6322,,+1-425-876-5324,3868 Washington Blvd,Suite 561,Oklahoma City,OK,43800,FR,,2023-11-05,02-08-2023,inactive,,,COD
+CL-0042,TechWorld,,,TechWorld,corporation,legal@techworld.com,,Unknown,738 337 7251,,5313 Oak St,,Portland,OR,98354,USA,,01-09-2020,2023/05/25,,Legacy client record,33900.23,15 days
+CL-0043,SmartSystems,,,SmartSystems,company,legal@smartsystems.com,,(533) 677-6369,,,8880 First Ave,Suite 942,Chicago,IL,30517,UK,,2019/09/13,2024/03/24,suspended,Legacy client record,,
+CL-0044,"Johnson, Helen",Helen,Johnson,,,helen.johnson@example.com,,(329) 341-5471,,+1-549-468-2395,437 Second Dr,Suite 860,Houston,TX,54633,CN,,2018/02/28,12-10-2024,ACTIVE,Legacy client record,17064.27,Net 30
+CL-0045,"Allen, Robert",Robert,Allen,,person,robert.allen@example.com,,Unknown,673-354-9657,,5365 Oak Ave,,Memphis,TN,69307,US,"5365 Oak Ave, Memphis, TN 69307",17/12/2022,,Active,,,COD
+CL-0046,SystemFlow Ltd,,,SystemFlow Ltd,company,,,000-000-0000,,,8028 Lincoln Dr,,Boston,MA,14751,BR,,Unknown,09/01/2023,inactive,,,COD
+CL-0047,"Cruz, Joshua",Joshua,Cruz,,person,joshua.cruz@example.com,,868-602-4642,,,5271 Park Way,,Jacksonville,FL,62208,DE,,25/12/2020,08-03-2024,suspended,Legacy client record,48809.1,30 days
+CL-0048,"Collins, Thomas",Thomas,Collins,,person,thomas.collins@example.com,,+1 371 619 7564,,,2270 Oak Dr,,Milwaukee,WI,73182,BR,"2270 Oak Dr, Milwaukee, WI 73182",11 January 2021,13 April 2024,,,,
+CL-0049,"Anderson, Steven",Steven,Anderson,,person,steven.anderson@example.com,,540 761 3926,746 398 5481,,2961 Second St,,San Antonio,TX,58035,Germany,,19/07/2022,27/08/2024,active,,49682.3,
+CL-0050,"Robinson, Susan",Susan,Robinson,,,,,261 951 5462,,,7674 Main Blvd,,El Paso,TX,45902,GB,,07/01/2020,29/12/23,Active,Legacy client record,,Net 30
+CL-0051,"Gomez, Donna",Donna,Gomez,,,donna.gomez@example.com,,+1 485 971 8589,1-434-339-8445,,2496 Washington Way,,Milwaukee,WI,74062,US,,20/04/2021,15-06-2023,inactive,,12085.35,
+CL-0052,Deborah Hernandez,Deborah,Hernandez,,person,deborah.hernandez@example.com,,+1-913-202-6876,,,5010 Main St,,Albuquerque,NM,22182,Australia,"5010 Main St, Albuquerque, NM 22182",2021/01/10,,inactive,,,
+CL-0053,Joshua Phillips,Joshua,Phillips,,,joshua.phillips@example.com,,,,258.566.9749,2033 Washington Way,,San Francisco,CA,59229,Brazil,,TBD,,suspended,,26638.5,15 days
+CL-0054,"Reyes, Lisa",Lisa,Reyes,,person,lisa.reyes@example.com,,1-203-958-3562,,,9948 Washington St,Suite 265,Philadelphia,PA,66722,CA,,12/02/2021,2023/08/16,active,,42744.43,COD
+CL-0055,"Edwards, David",David,Edwards,,individual,david.edwards@example.com,,(447) 554-1075,920-221-8532,,9771 Washington Dr,,Jacksonville,FL,74633,GB,,21/07/2023,,ACTIVE,,16777.8,Net 30
+CL-0056,DataFlow Ltd,,,DataFlow Ltd,corporation,legal@dataflowltd.com,,+1 466 216 9947,971-388-3213,(503) 354-8722,7567 Main St,Suite 678,San Diego,CA,92371,USA,,05-05-2022,03/11/23,suspended,,14721.74,Net 30
+CL-0057,"Scott, Anthony",Anthony,Scott,,,anthony.scott@example.com,,851 591 3565,,,489 Park Way,Suite 880,El Paso,TX,44135,Canada,"489 Park Way, El Paso, TX 44135","February 02, 2018",,suspended,Legacy client record,29422.32,COD
+CL-0058,SystemTech,,,SystemTech,corporation,legal@systemtech.com,,(337) 539-5722,+1-481-923-1793,,1577 Second Ave,,Columbus,OH,59925,France,,"June 26, 2021",2023-11-15,ACTIVE,,24593.8,30 days
+CL-0059,"Evans, Karen",Karen,Evans,,person,karen.evans@example.com,,306 319 2955,+1 340 280 7100,,5618 Second Blvd,,Fort Worth,TX,35422,UK,,21/05/2020,06/22/23,active,,28389.2,COD
+CL-0060,TechMaster LLC,,,TechMaster LLC,,legal@techmasterllc.com,,253-926-8599,000-000-0000,,4203 Oak Ave,Suite 147,Nashville,TN,61707,BR,"4203 Oak Ave, Nashville, TN 61707",21/04/2018,15/05/2023,ACTIVE,,34438.7,
+CL-0061,NexGen Solutions Corp,,,NexGen Solutions Corp,,legal@nexgensolutionscorp.com,,+1 707 820 7008,,303 761 8892,9218 Washington Blvd,,Nashville,TN,82198,France,"9218 Washington Blvd, Nashville, TN 82198",03/07/19,2023/07/14,ACTIVE,Legacy client record,17799.32,COD
+CL-0062,"Hernandez, Nancy",Nancy,Hernandez,,person,nancy.hernandez@example.com,,721.989.8441,,,3975 Park Way,,Albuquerque,NM,45090,India,,2020-02-24,09/02/23,inactive,,28453.06,
+CL-0063,"Clark, Thomas",Thomas,Clark,,,thomas.clark@example.com,,1-560-202-1115,,,2915 Main Blvd,Suite 457,Nashville,TN,89776,BR,,03/09/2020,,inactive,,,15 days
+CL-0064,InnovateNow,,,InnovateNow,,legal_at_innovatenow.com,,1-957-876-1683,+1 433 507 7897,,3739 Oak Blvd,Suite 978,Dallas,TX,47737,USA,,11-29-2022,04 August 2024,ACTIVE,,2387.37,Net 30
+CL-0065,"Lewis, Betty",Betty,Lewis,,individual,betty.lewis@example.com,,240-980-9157,,,9595 Washington Blvd,,New York,NY,84986,Japan,,27/09/2018,,ACTIVE,Legacy client record,26927.99,COD
+CL-0066,"Wilson, Sandra",Sandra,Wilson,,individual,sandra.wilson@example.com,,+1 419 217 9446,1-252-761-8932,,2743 Oak Ave,Suite 730,Oklahoma City,OK,52486,Brazil,,30/12/2019,,ACTIVE,Legacy client record,31209.3,15 days
+CL-0067,SmartSystems,,,SmartSystems,company,legal@smartsystems.com,,+1 826 212 9819,,,3895 Main St,Suite 665,Austin,TX,78659,FR,,30/09/21,,suspended,,,
+CL-0068,"Gonzalez, Charles",Charles,Gonzalez,,,charles.gonzalez@example.com,,279.845.4629,,,1038 Oak Way,,Houston,TX,21953,USA,"1038 Oak Way, Houston, TX 21953",30 September 2020,,,,1181.72,
+CL-0069,Engineering Solutions,,,Engineering Solutions,,legal@engineeringsolutions.com,,+1 438 208 3341,659.296.5467,,4766 First Blvd,,Nashville,TN,76609,UK,,31/03/22,TBD,ACTIVE,Legacy client record,2242.68,Net 30
+CL-0070,Lisa Martin,Lisa,Martin,,,,,838.750.6829,,,3013 Lincoln St,,Houston,TX,60846,Japan,,2021-05-16,,active,Legacy client record,15476.58,
+CL-0071,GlobalTech,,,GlobalTech,corporation,legal@globaltech.com,,811.899.4623,639.956.7831,+1 292 221 4774,4203 First Ave,Suite 464,Baltimore,MD,34119,USA,"4203 First Ave, Baltimore, MD 34119",21 August 2022,03/06/2024,suspended,,16472.59,Net 30
+CL-0072,AdvancedSoft,,,AdvancedSoft,corporation,legal_at_advancedsoft.com,,997 465 7842,(358) 530-3153,,2751 Park Blvd,Suite 517,San Antonio,TX,63568,United States,"2751 Park Blvd, San Antonio, TX 63568",,"May 22, 2024",inactive,Legacy client record,5832.73,
+CL-0073,DataCore,,,DataCore,company,legal@datacore.com,,512.294.2729,+1-704-980-5196,,5479 Lincoln Blvd,Suite 316,Louisville,KY,34892,US,"5479 Lincoln Blvd, Louisville, KY 34892",29 November 2020,02 May 2023,Active,,8257.85,
+CL-0074,NexGen Solutions Inc,,,NexGen Solutions Inc,company,legal@nexgensolutionsinc.com,,669-834-7777,882.354.8096,,6101 Second Way,,Baltimore,MD,42587,JP,,N/A,,ACTIVE,Legacy client record,,
+CL-0075,Construction Tech LLC,,,Construction Tech LLC,corporation,legal@constructiontechllc.com,,948-338-4778,798 918 2324,,852 Park Ave,,Washington,DC,40754,BR,"852 Park Ave, Washington, DC 40754","May 01, 2020",,Active,,32499.52,
+CL-0076,"Parker, Patricia",Patricia,Parker,,individual,patricia.parker@example.com,,748-227-4009,,,2207 Second Blvd,Suite 553,Jacksonville,FL,91995,UK,,06-19-2020,,inactive,Legacy client record,,
+CL-0077,"Phillips, Jeffrey",Jeffrey,Phillips,,person,jeffrey.phillips@example.com,,1-544-529-8101,1-447-929-8222,,5300 Second Ave,Suite 335,Denver,CO,50146,US,,TBD,,inactive,,20492.3,COD
+CL-0078,TechCorp,,,TechCorp,company,legal@techcorp.com,,958.812.9570,,,5663 Washington Ave,,Dallas,TX,57462,CN,"5663 Washington Ave, Dallas, TX 57462",28-11-2022,2024/05/12,inactive,,16881.3,
+CL-0079,"Hernandez, Kenneth",Kenneth,Hernandez,,,kenneth.hernandez@example.com,,871-638-9178,,,3892 Second Dr,,San Francisco,CA,76419,India,,09-05-2018,2023/02/02,active,,,
+CL-0080,Sarah Edwards,Sarah,Edwards,,person,sarah.edwards@example.com,,1-685-855-5364,(467) 203-9666,,2302 Main Ave,,Indianapolis,IN,70069,France,,06/11/2021,29/11/2023,active,,43538.55,COD
+CL-0081,"White, John",John,White,,,john.white@example.com,,+1 852 494 3581,+1 214 830 8279,,4131 Lincoln Blvd,Suite 677,Dallas,TX,23240,China,,2021-04-30,29-04-2023,inactive,,2047.33,COD
+CL-0082,"Moore, Ronald",Ronald,Moore,,,ronald.moore@example.com,,440-863-4439,,,1088 Second Ave,Suite 906,Detroit,MI,72196,China,"1088 Second Ave, Detroit, MI 72196",05-09-2021,04/02/2024,,,,30 days
+CL-0083,Christopher Johnson,Christopher,Johnson,,individual,christopher.johnson@example.com,,(936) 244-2096,652 753 5653,,7074 Park Dr,,Milwaukee,WI,75379,JP,,"July 12, 2018",23/01/2023,suspended,,,
+CL-0084,"King, Joseph",Joseph,King,,person,joseph.king@example.com,,621 672 7765,+1-693-430-5865,,7578 Park St,,Denver,CO,76122,GB,"7578 Park St, Denver, CO 76122",21-11-2018,,active,,,
+CL-0085,William Reyes,William,Reyes,,person,william.reyes@example.com,,300.239.1352,1-292-625-2836,440.415.8782,6425 First Ave,Suite 977,Austin,TX,19475,Deutschland,"6425 First Ave, Austin, TX 19475",2019-09-01,24/12/2023,active,,,30 days
+CL-0086,"Anderson, Helen",Helen,Anderson,,individual,helen.anderson@example.com,,+1-431-307-4657,,+1 523 949 9891,4998 Main Dr,,Columbus,OH,43527,GB,"4998 Main Dr, Columbus, OH 43527",15-12-2022,,suspended,Legacy client record,,
+CL-0087,Betty Lee,Betty,Lee,,individual,betty.lee@example.com,,207-487-4024,(226) 251-4836,,6098 Second Way,,Detroit,MI,25969,Brazil,,"January 11, 2020",,ACTIVE,,5849.25,
+CL-0088,Betty Anderson,Betty,Anderson,,person,betty.anderson@example.com,,(353) 600-4325,,,3696 Lincoln Dr,,Nashville,TN,78794,JP,,26/09/2018,2024-09-11,Active,,,30 days
+CL-0089,DataGrid,,,DataGrid,company,legal@datagrid.com,,563.558.3087,+1 530 959 8386,,8647 Main St,Suite 468,Boston,MA,55310,Brazil,,Unknown,04/16/23,,,2076.65,
+CL-0090,"Anderson, Richard",Richard,Anderson,,person,richard.anderson@example.com,,281 320 4131,,769-381-5770,3441 Oak Blvd,,Phoenix,AZ,72489,UK,,2023-10-18,03/05/2023,inactive,,,
+CL-0091,"Sanchez, Thomas",Thomas,Sanchez,,,thomas.sanchez@example.com,,803-229-4417,697-469-1733,,8633 Second Ave,,Detroit,MI,93069,United Kingdom,,06/23/19,,,,29591.44,
+CL-0092,"Allen, Jason",Jason,Allen,,person,jason.allen@example.com,,+1 836 900 7383,+1-445-241-7924,1-377-937-6953,4107 Lincoln Dr,Suite 993,Boston,MA,72540,AU,"4107 Lincoln Dr, Boston, MA 72540",26 May 2021,,ACTIVE,Legacy client record,17155.5,COD
+CL-0093,"Anderson, Mary",Mary,Anderson,,,mary.anderson@example.com,,482.743.6042,,,1115 Second Blvd,,Las Vegas,NV,64799,GB,,08/09/20,15/12/23,,Legacy client record,,
+CL-0094,"Edwards, Sharon",Sharon,Edwards,,person,,,830-398-4375,,,1456 Park Blvd,,Austin,TX,27804,BR,,"December 05, 2022",,inactive,Legacy client record,49220.5,30 days
+CL-0095,"Phillips, Edward",Edward,Phillips,,person,,,558-833-4409,945 643 6228,,5803 Washington Ave,Suite 791,Oklahoma City,OK,18845,United Kingdom,"5803 Washington Ave, Oklahoma City, OK 18845",11-17-2022,27/02/23,ACTIVE,,,
+CL-0096,"Scott, William",William,Scott,,person,william.scott@example.com,,+1 696 852 2692,,,58 Park Dr,,Baltimore,MD,58684,Canada,,2020-07-26,"August 12, 2023",,,48395.19,Net 30
+CL-0097,"Anderson, Joseph",Joseph,Anderson,,individual,joseph.anderson@example.com,,935-654-5532,+1 445 690 9920,,1128 Main Dr,,Louisville,KY,95137,CA,,16/08/22,2024/01/22,,,46488.48,15 days
+CL-0098,"Morales, Carol",Carol,Morales,,,carol.morales@example.com,,000-000-0000,,,9275 Washington Way,,Oklahoma City,OK,97361,Deutschland,,18/09/2020,17/01/24,,Legacy client record,,
+CL-0099,InnovateCorp Ltd,,,InnovateCorp Ltd,,legal@innovatecorpltd.com,,1-238-351-1098,,,3324 Washington Way,Suite 928,Detroit,MI,19117,Australia,,2021/12/28,31/07/2023,active,,,
+CL-0100,"Martinez, George",George,Martinez,,,george.martinez@example.com,,1-366-871-2137,+1-406-302-9303,,6878 Main Ave,,Fort Worth,TX,32757,CA,,23 June 2019,30/01/24,ACTIVE,Legacy client record,34650.07,
+CL-0101,TechBase,,,TechBase,,legal@techbase.com,,(692) 944-4918,1-355-987-5001,,3399 Park St,,San Diego,CA,92358,United Kingdom,"3399 Park St, San Diego, CA 92358",2020-10-19,,inactive,Legacy client record,13416.91,
+CL-0102,"Edwards, Robert",Robert,Edwards,,person,robert.edwards@example.com,,+1-921-702-7692,,,4593 First Ave,Suite 756,Denver,CO,39809,Canada,"4593 First Ave, Denver, CO 39809",06/20/21,TBD,ACTIVE,,16526.15,15 days
+CL-0103,"Jones, Michelle",Michelle,Jones,,individual,michelle.jones@example.com,,N/A,+1 489 420 5342,,6474 Main Way,,Seattle,WA,58765,Germany,,27-05-2018,,,,16909.41,Net 30
+CL-0104,Ronald Phillips,Ronald,Phillips,,individual,ronald.phillips@example.com,,792.351.3773,373.890.7104,,7187 Lincoln Way,,Nashville,TN,51225,US,,17-02-2021,00/00/0000,active,,,30 days
+CL-0105,InfoSys Corp,,,InfoSys Corp,,legal@infosyscorp.com,,530 742 7356,,,6857 Second Dr,,Seattle,WA,43295,Japan,"6857 Second Dr, Seattle, WA 43295",10/02/20,2024/10/15,ACTIVE,,39386.71,
+CL-0106,"Lopez, Richard",Richard,Lopez,,individual,richard.lopez@example.com,,231 301 7905,(350) 646-6482,,5288 First Blvd,,Columbus,OH,73605,China,,"March 15, 2020",2023-02-24,ACTIVE,,42253.77,
+CL-0107,Andrew Nguyen,Andrew,Nguyen,,person,andrew.nguyen@example.com,,1-516-737-5905,,,6183 First Dr,,Nashville,TN,48068,Germany,,10/20/2023,"June 02, 2024",suspended,,31712.3,Net 30
+CL-0108,DataGrid,,,DataGrid,company,legal@datagrid.com,,(857) 253-4717,1-588-320-9253,,1034 Oak Way,,Seattle,WA,51720,UK,,TBD,01 October 2023,ACTIVE,,38118.7,15 days
+CL-0109,"Clark, Sharon",Sharon,Clark,,,sharon.clark@example.com,,512-511-2058,1-388-332-8606,,4073 Washington Dr,,Phoenix,AZ,44772,USA,,2021-10-28,11/08/24,ACTIVE,Legacy client record,46799.05,
+CL-0110,"Edwards, Linda",Linda,Edwards,,individual,linda.edwards@example.com,,613 313 4058,,,7631 Oak Dr,,El Paso,TX,81224,India,"7631 Oak Dr, El Paso, TX 81224",2022-04-25,02/18/2023,suspended,,45301.89,
+CL-0111,Ronald Hernandez,Ronald,Hernandez,,,ronald.hernandez@example.com,,,,,7859 Washington Blvd,Suite 287,Phoenix,AZ,79328,CA,,20/09/19,20/10/23,suspended,,,30 days
+CL-0112,TechVision,,,TechVision,,legal@techvision.com,,+1-552-930-8265,+1 795 432 4419,,7994 Washington Dr,,Indianapolis,IN,57728,AU,"7994 Washington Dr, Indianapolis, IN 57728",16/08/21,"September 10, 2023",inactive,,2607.95,30 days
+CL-0113,"Martinez, Steven",Steven,Martinez,,person,steven.martinez@example.com,,(779) 947-2327,896-635-6782,,4412 Washington St,,Columbus,OH,85773,Deutschland,"4412 Washington St, Columbus, OH 85773",21/06/2020,2024-04-20,Active,Legacy client record,,COD
+CL-0114,"Lewis, Kevin",Kevin,Lewis,,,kevin.lewis@example.com,,+1-877-349-2786,+1-411-700-6000,,255 Main Blvd,Suite 871,Seattle,WA,78236,China,,12/26/19,06/26/23,inactive,,12548.65,
+CL-0115,Jennifer Smith,Jennifer,Smith,,,,,871 511 1919,,,2715 Park St,Suite 962,Baltimore,MD,13092,FR,,01 November 2021,16/04/23,ACTIVE,,10605.92,
+CL-0116,TechMaster Ltd,,,TechMaster Ltd,corporation,,,+1 377 772 5572,+1 474 519 4247,,3763 First St,Suite 173,Seattle,WA,66714,Australia,"3763 First St, Seattle, WA 66714",26-09-2018,,Active,,43905.29,COD
+CL-0117,"Allen, Dorothy",Dorothy,Allen,,individual,dorothy.allen@example.com,,(207) 995-6479,(709) 645-8259,+1-699-824-7549,3853 Washington Dr,Suite 612,Portland,OR,88418,DE,,2019/03/13,19/11/23,inactive,,,15 days
+CL-0118,Brian Diaz,Brian,Diaz,,individual,brian.diaz@example.com,,+1 902 662 3967,,230.920.7397,4569 Main Dr,,Baltimore,MD,96702,France,,05/09/2021,"February 20, 2024",,Legacy client record,48094.09,COD
+CL-0119,"Thompson, Linda",Linda,Thompson,,individual,linda.thompson@example.com,,+1-575-721-8539,+1-631-642-3718,,6244 First Dr,,Baltimore,MD,34200,Canada,"6244 First Dr, Baltimore, MD 34200",10-21-2018,11/01/24,inactive,Legacy client record,,COD
+CL-0120,Andrew Flores,Andrew,Flores,,individual,andrew.flores@example.com,,593.459.2289,+1 244 389 2028,1-302-209-3482,2411 Washington Blvd,Suite 556,San Antonio,TX,96434,DE,"2411 Washington Blvd, San Antonio, TX 96434",08/14/2020,02-13-2023,ACTIVE,,,
+CL-0121,Automotive Parts Inc,,,Automotive Parts Inc,,legal@automotivepartsinc.com,,357 805 7330,224.894.8278,,7347 Lincoln Way,,Louisville,KY,49848,UK,,07-30-2020,,Active,,47869.14,15 days
+CL-0122,Jennifer Rodriguez,Jennifer,Rodriguez,,individual,,,+1-384-898-6632,,,8406 Park St,,Indianapolis,IN,40069,BR,"8406 Park St, Indianapolis, IN 40069",2019-01-16,,active,,38746.54,COD
+CL-0123,Paul Hill,Paul,Hill,,person,paul.hill@example.com,,563-645-5873,,(277) 893-5043,9505 Oak St,,Washington,DC,66002,JP,,01-05-2018,,,,,COD
+CL-0124,"Wilson, Ronald",Ronald,Wilson,,,,,1-495-372-7998,407.503.5897,,6207 Main St,,Louisville,KY,29766,Japan,"6207 Main St, Louisville, KY 29766",17 October 2021,,active,,4543.11,
+CL-0125,DigitalEdge,,,DigitalEdge,corporation,legal@digitaledge.com,,860.806.6721,+1-514-681-7670,410 307 6954,2229 Park Dr,,San Francisco,CA,78371,Canada,"2229 Park Dr, San Francisco, CA 78371",23/08/19,,inactive,,19322.25,30 days
+CL-0126,"Young, Paul",Paul,Young,,individual,paul.young@example.com,,991-319-6767,1-329-892-1497,,2699 Lincoln Ave,,Oklahoma City,OK,41109,USA,"2699 Lincoln Ave, Oklahoma City, OK 41109",10/09/2019,,,,13264.66,30 days
+CL-0127,"Parker, James",James,Parker,,,james.parker@example.com,,408 689 3584,000-000-0000,,193 Park Way,,San Francisco,CA,19713,CA,,28/11/20,,active,Legacy client record,,30 days
+CL-0128,"Jackson, Jessica",Jessica,Jackson,,person,jessica.jackson@example.com,,1-588-894-8564,1-779-770-9968,,8656 Park Dr,,Chicago,IL,32625,CN,,"September 10, 2022",TBD,Active,,,15 days
+CL-0129,Linda Nguyen,Linda,Nguyen,,,linda.nguyen@example.com,,+1 639 264 8234,1-757-336-9595,,8810 Washington St,,San Francisco,CA,93743,Canada,"8810 Washington St, San Francisco, CA 93743",2021/02/26,21-12-2023,active,Legacy client record,7511.82,COD
+CL-0130,"Young, Matthew",Matthew,Young,,individual,matthew.young@example.com,,(658) 745-6598,+1-594-997-9161,,4591 Lincoln Blvd,Suite 235,Phoenix,AZ,43916,CA,,08/25/2022,,suspended,,16549.48,30 days
+CL-0131,"Miller, Paul",Paul,Miller,,person,,,+1-510-547-1562,324-981-3851,,1498 First Ave,Suite 248,Chicago,IL,46716,India,,28-04-2023,,,,23679.19,Net 30
+CL-0132,"Lopez, Jason",Jason,Lopez,,individual,jason.lopez@example.com,,1-324-473-1372,536.839.3254,,9358 Main Dr,Suite 945,Oklahoma City,OK,54221,UK,"9358 Main Dr, Oklahoma City, OK 54221",2023/09/18,01-16-2024,Active,,,30 days
+CL-0133,"Smith, John",John,Smith,,individual,john.smith@example.com,,338 963 4141,(949) 536-9971,,4721 Washington Dr,Suite 916,Phoenix,AZ,25843,US,"4721 Washington Dr, Phoenix, AZ 25843",08-21-2022,,active,,,
+CL-0134,"Sanchez, Helen",Helen,Sanchez,,,,,706-519-6627,498-898-3747,,7608 Second Dr,,Fort Worth,TX,23129,USA,"7608 Second Dr, Fort Worth, TX 23129",2021/05/19,TBD,suspended,,26317.99,15 days
+CL-0135,Sarah Walker,Sarah,Walker,,individual,sarah.walker@example.com,,+1 854 469 8762,+1-660-793-3238,,5584 Oak Blvd,,Austin,TX,66124,CA,,"August 05, 2022",08/07/2023,ACTIVE,Legacy client record,9615.13,Net 30
+CL-0136,"Rivera, James",James,Rivera,,person,james.rivera@example.com,,+1 673 637 4117,266-231-8371,,4090 Main Dr,,San Francisco,CA,72485,Japan,,"March 03, 2020",,active,Legacy client record,40332.36,15 days
+CL-0137,DataDyne,,,DataDyne,company,legal@datadyne.com,,Unknown,(753) 214-7631,+1-532-215-8164,4947 First Dr,,Portland,OR,86661,US,,2021/01/18,04-19-2023,active,,39943.97,Net 30
+CL-0138,"Flores, Kimberly",Kimberly,Flores,,person,kimberly.flores_at_example.com,,577.771.9588,,756-600-9897,217 Oak Dr,Suite 392,Milwaukee,WI,33789,Deutschland,,08/16/20,12/10/24,,,15904.31,15 days
+CL-0139,"White, Sandra",Sandra,White,,individual,sandra.white@example.com,,729-838-3909,451 515 8074,,2413 Oak Blvd,Suite 370,Boston,MA,37273,CN,,12-22-2023,,Active,Legacy client record,2473.42,
+CL-0140,"Roberts, Jennifer",Jennifer,Roberts,,individual,jennifer.roberts@example.com,,+1 600 389 2166,(746) 256-8582,,1935 Lincoln Dr,,Jacksonville,FL,92292,United Kingdom,"1935 Lincoln Dr, Jacksonville, FL 92292",2021-11-01,05-10-2024,ACTIVE,,7139.93,COD
+CL-0141,Brian Green,Brian,Green,,individual,brian.green@example.com,,417 952 1399,,,994 Main Dr,Suite 995,Oklahoma City,OK,62657,USA,,12/06/2021,,ACTIVE,Legacy client record,1845.22,
+CL-0142,"Johnson, Linda",Linda,Johnson,,person,linda.johnson@example.com,,+1 835 202 6834,1-335-278-3889,,5557 Park Dr,,San Antonio,TX,94707,Brazil,"5557 Park Dr, San Antonio, TX 94707",2021-06-02,30/09/23,suspended,,21553.68,
+CL-0143,"Perez, Robert",Robert,Perez,,person,robert.perez@example.com,,1-875-512-3500,207.602.8257,,6002 Lincoln St,,New York,NY,82403,Canada,,02/10/22,,Active,,,COD
+CL-0144,"Reyes, John",John,Reyes,,,john.reyes@example.com,,1-487-345-3998,,,2790 Washington Way,,Fort Worth,TX,98999,FR,"2790 Washington Way, Fort Worth, TX 98999","March 23, 2019",,ACTIVE,,,Net 30
+CL-0145,"Miller, Dorothy",Dorothy,Miller,,,dorothy.miller@example.com,,(641) 962-8598,+1 538 326 2340,,2163 First Dr,,Seattle,WA,77992,JP,,28-05-2020,,inactive,,28754.17,15 days
+CL-0146,"Morris, Steven",Steven,Morris,,person,steven.morris@example.com,,817.236.8815,515.996.5705,(219) 260-6578,7437 Second Blvd,Suite 981,San Antonio,TX,58729,AU,"7437 Second Blvd, San Antonio, TX 58729",13-06-2022,2024-10-04,inactive,,28855.06,15 days
+CL-0147,"Nelson, Betty",Betty,Nelson,,person,betty.nelson_at_example.com,,+1 921 422 2282,,,5705 First St,,Louisville,KY,69616,GB,"5705 First St, Louisville, KY 69616",12/11/2020,07-16-2024,active,,41213.61,
+CL-0148,"Miller, Sharon",Sharon,Miller,,,sharon.miller@example.com,,(720) 662-1336,+1-890-521-8849,,1960 Main Way,Suite 232,Portland,OR,57848,BR,,18/08/20,,suspended,Legacy client record,,30 days
+CL-0149,Patricia Smith,Patricia,Smith,,,patricia.smith@example.com,,+1 433 950 5554,+1-854-787-1434,,2918 Main Dr,Suite 313,Las Vegas,NV,23429,CN,,2021-07-01,07-05-2023,active,Legacy client record,21806.16,COD
+CL-0150,James Morris,James,Morris,,individual,james.morris@example.com,,695.357.2815,,,8110 Main St,Suite 882,Boston,MA,28311,US,"8110 Main St, Boston, MA 28311",15/04/21,12/11/23,inactive,,42095.63,Net 30
+CL-0151,TechnoLogic LLC,,,TechnoLogic LLC,corporation,legal@technologicllc.com,,1-583-959-8683,(417) 306-1834,(806) 791-2846,9484 Park Way,,Fort Worth,TX,90187,BR,"9484 Park Way, Fort Worth, TX 90187",2021/11/30,05/04/2024,active,Legacy client record,,
+CL-0152,"Allen, Sandra",Sandra,Allen,,,sandra.allen@example.com,,446-740-2116,530.298.5660,,9428 Washington St,Suite 778,Memphis,TN,20730,DE,"9428 Washington St, Memphis, TN 20730",18/03/21,05/13/2024,active,,4799.84,Net 30
+CL-0153,"Jones, Jessica",Jessica,Jones,,person,jessica.jones@example.com,,598.342.8559,,(592) 645-8187,5859 Oak Ave,,Jacksonville,FL,92488,France,,29/09/21,,Active,,18830.45,
+CL-0154,"Evans, Jeffrey",Jeffrey,Evans,,person,jeffrey.evans@example.com,,429 280 1042,,,3044 Second Dr,,San Diego,CA,58249,IN,"3044 Second Dr, San Diego, CA 58249",10/10/2020,,Active,,,30 days
+CL-0155,"Flores, Dorothy",Dorothy,Flores,,,dorothy.flores@example.com,,+1-831-539-6142,+1-747-756-2909,,6902 Park Ave,,Jacksonville,FL,36831,United States,,2021/12/09,,active,,33617.32,30 days
+CL-0156,Energy Solutions,,,Energy Solutions,,,,+1-783-975-9196,,+1-543-292-9429,9933 First Way,Suite 311,New York,NY,24052,France,"9933 First Way, New York, NY 24052",00/00/0000,,active,,13640.69,
+CL-0157,DataGrid Inc,,,DataGrid Inc,company,legal@datagridinc.com,,1-527-341-4555,,,9870 Main St,,Portland,OR,14848,UK,"9870 Main St, Portland, OR 14848",03/29/20,,,,,15 days
+CL-0158,TechSolutions,,,TechSolutions,corporation,legal@techsolutions.com,,+1-424-264-9906,,,6172 Oak St,,Portland,OR,66776,United States,,11 June 2022,2023/08/19,suspended,,35239.29,COD
+CL-0159,"Nguyen, Jacob",Jacob,Nguyen,,person,jacob.nguyen@example.com,,+1 923 868 2715,,,6678 Main St,Suite 546,Baltimore,MD,46422,IN,"6678 Main St, Baltimore, MD 46422",14 January 2023,04/16/24,,,4178.11,30 days
+CL-0160,"Cruz, Edward",Edward,Cruz,,individual,edward.cruz@example.com,,864 447 2314,+1-846-219-7854,,1028 Washington Way,Suite 671,Albuquerque,NM,83520,JP,"1028 Washington Way, Albuquerque, NM 83520",26/12/2023,06/17/24,ACTIVE,,32653.75,30 days
+CL-0161,"Morales, Sharon",Sharon,Morales,,individual,sharon.morales@example.com,,+1-645-653-1050,1-815-322-7507,(819) 724-2823,9403 First Ave,,Los Angeles,CA,34010,Australia,,05/11/20,,active,Legacy client record,32957.8,
+CL-0162,"Wilson, Helen",Helen,Wilson,,,helen.wilson@example.com,,1-956-893-8028,,,4357 Main Way,,Las Vegas,NV,83189,USA,,"April 15, 2021","May 04, 2023",active,Legacy client record,,
+CL-0163,"Garcia, Karen",Karen,Garcia,,,,,+1 844 810 8914,,,8399 Washington Dr,,Denver,CO,36783,USA,,"May 24, 2020",02/25/23,suspended,,,
+CL-0164,Kenneth Campbell,Kenneth,Campbell,,,kenneth.campbell@example.com,,+1 499 251 7812,,,6237 First Blvd,,New York,NY,25145,Canada,,"April 28, 2019",2024-11-19,Active,Legacy client record,,
+CL-0165,Mary Johnson,Mary,Johnson,,individual,mary.johnson@example.com,,+1-702-679-5235,1-211-223-9669,,3988 Washington Blvd,,Dallas,TX,57563,China,,2021/12/10,,inactive,,25724.45,
+CL-0166,Helen Parker,Helen,Parker,,,helen.parker@example.com,,987.411.4248,,,377 Washington Way,,Albuquerque,NM,42698,JP,,2019-01-01,,ACTIVE,,43461.99,15 days
+CL-0167,Industrial Systems Ltd,,,Industrial Systems Ltd,corporation,legal@industrialsystemsltd.com,,915-395-9150,000-000-0000,,2855 Oak Blvd,,El Paso,TX,72567,USA,"2855 Oak Blvd, El Paso, TX 72567",2022/09/23,1900-01-01,,,,
+CL-0168,"White, Matthew",Matthew,White,,person,matthew.white@example.com,,+1 231 909 4605,,503.241.8342,6594 Second Ave,,San Diego,CA,75535,CN,,08/15/20,15/12/23,inactive,,,
+CL-0169,"Diaz, Jennifer",Jennifer,Diaz,,,jennifer.diaz@example.com,,(512) 743-2187,(406) 885-9722,,783 Park Dr,,Oklahoma City,OK,94277,Deutschland,"783 Park Dr, Oklahoma City, OK 94277",03-17-2023,28 January 2023,Active,Legacy client record,,30 days
+CL-0170,Carol Nelson,Carol,Nelson,,person,,,343-520-4912,+1 778 252 8945,,617 Washington Ave,Suite 787,Philadelphia,PA,77164,UK,,30/05/18,"September 23, 2023",Active,,38362.23,30 days
+CL-0171,AdvancedSoft Ltd,,,AdvancedSoft Ltd,corporation,legal@advancedsoftltd.com,,311 453 1406,,,9839 First Way,,San Jose,CA,68067,Germany,,2019-04-23,01-23-2024,Active,Legacy client record,6881.34,COD
+CL-0172,"Scott, Thomas",Thomas,Scott,,,thomas.scott@example.com,,247 861 5643,,,6724 Second Ave,Suite 321,Baltimore,MD,78680,United Kingdom,"6724 Second Ave, Baltimore, MD 78680",2021/07/19,,Active,,,COD
+CL-0173,"Miller, Sharon",Sharon,Miller,,individual,sharon.miller@example.com,,553-562-3218,,,6818 First Dr,Suite 209,Indianapolis,IN,43395,CA,"6818 First Dr, Indianapolis, IN 43395",10 December 2019,TBD,,,41766.44,
+CL-0174,"Jones, Dorothy",Dorothy,Jones,,individual,dorothy.jones@example.com,,405-260-7899,,,9483 Main Ave,Suite 499,Seattle,WA,68126,Canada,"9483 Main Ave, Seattle, WA 68126",24-06-2021,"February 09, 2024",ACTIVE,,,30 days
+CL-0175,"Johnson, Laura",Laura,Johnson,,individual,laura.johnson@example.com,,+1-548-964-3900,(613) 358-6462,,599 Lincoln Way,,Jacksonville,FL,13961,United States,,"January 16, 2022",12-27-2023,,,,
+CL-0176,"Smith, Joseph",Joseph,Smith,,,joseph.smith@example.com,,+1 806 865 3946,(552) 552-5377,,7705 First Way,,San Jose,CA,58037,India,,04/25/19,24 July 2023,suspended,Legacy client record,18477.29,
+CL-0177,SystemFlow Corp,,,SystemFlow Corp,,legal@systemflowcorp.com,,280 449 7296,,,8506 Second Way,Suite 494,Detroit,MI,68624,Germany,,20-07-2020,07/11/2024,inactive,,,Net 30
+CL-0178,GlobalTech,,,GlobalTech,,legal@globaltech.com,,(202) 509-8136,1-505-437-1696,,1742 Lincoln St,,Fort Worth,TX,39223,CN,,10-31-2019,"November 15, 2023",,,46647.02,
+CL-0179,"Moore, Betty",Betty,Moore,,individual,betty.moore@example.com,,(876) 554-9240,+1 569 272 4345,,5998 Lincoln Way,,Charlotte,NC,75357,India,"5998 Lincoln Way, Charlotte, NC 75357",23/11/2022,2023/08/11,suspended,,23151.27,Net 30
+CL-0180,SystemsPlus,,,SystemsPlus,,legal@systemsplus.com,,+1 678 877 7408,1-900-776-6391,,646 Washington Blvd,,Los Angeles,CA,35096,JP,"646 Washington Blvd, Los Angeles, CA 35096",15-06-2019,01-04-2023,Active,,16238.8,Net 30
+CL-0181,"Phillips, Ruth",Ruth,Phillips,,individual,ruth.phillips@example.com,,(791) 837-9344,+1 225 995 1345,,7737 Main Dr,,Philadelphia,PA,44409,US,"7737 Main Dr, Philadelphia, PA 44409",20 October 2019,N/A,inactive,,10635.21,15 days
+CL-0182,"Moore, Deborah",Deborah,Moore,,person,deborah.moore@example.com,,258-567-7870,389 754 5494,(881) 875-9871,3833 Park Way,,Columbus,OH,48690,France,,05-27-2018,,Active,,36197.97,Net 30
+CL-0183,"Reyes, Michelle",Michelle,Reyes,,individual,,,321.383.1675,(783) 638-6901,698 751 9622,9441 Lincoln Dr,,Phoenix,AZ,31466,AU,"9441 Lincoln Dr, Phoenix, AZ 31466",21-12-2019,2024/01/20,ACTIVE,Legacy client record,43511.65,30 days
+CL-0184,"Green, Elizabeth",Elizabeth,Green,,individual,elizabeth.green@example.com,,753-445-7721,,,3475 First Blvd,Suite 437,Dallas,TX,97211,Deutschland,,03-06-2020,16 January 2024,Active,,38940.61,
+CL-0185,Chemical Corp,,,Chemical Corp,corporation,legal@chemicalcorp.com,,749.291.2084,434 412 2463,,4926 Second Ave,Suite 876,Louisville,KY,78531,US,,09/01/2021,,inactive,,,
+CL-0186,"Rivera, Deborah",Deborah,Rivera,,individual,deborah.rivera@example.com,,(537) 779-3848,817 826 4198,,1801 Oak St,Suite 411,San Diego,CA,17873,GB,"1801 Oak St, San Diego, CA 17873","November 26, 2020",,inactive,Legacy client record,8627.57,COD
+CL-0187,Pharmaceuticals Inc,,,Pharmaceuticals Inc,,,,(221) 846-3539,+1 292 670 4625,517 744 8016,804 Washington St,,Philadelphia,PA,76386,United States,,TBD,2024-01-17,inactive,,47243.36,15 days
+CL-0188,TechNet Inc,,,TechNet Inc,corporation,legal@technetinc.com,,N/A,+1-481-516-3351,,6094 Lincoln Dr,,Denver,CO,77143,Germany,,20 March 2023,05-31-2024,,Legacy client record,37259.22,30 days
+CL-0189,Kenneth Wilson,Kenneth,Wilson,,,kenneth.wilson@example.com,,1-506-548-4147,623-291-9713,,6656 Oak Way,,Los Angeles,CA,92986,Japan,"6656 Oak Way, Los Angeles, CA 92986",04/10/20,2024-06-14,inactive,,,COD
+CL-0190,"Phillips, Sharon",Sharon,Phillips,,,sharon.phillips@example.com,,+1-534-725-2305,,611.240.6490,2485 First Blvd,,Las Vegas,NV,43795,US,,04-04-2020,10/16/2023,active,Legacy client record,,Net 30
+CL-0191,Kimberly Robinson,Kimberly,Robinson,,,kimberly.robinson@example.com,,922-623-8733,,,6390 Main St,,San Jose,CA,35364,Australia,,07 December 2020,,,Legacy client record,,15 days
+CL-0192,SystemsPlus LLC,,,SystemsPlus LLC,corporation,legal@systemsplusllc.com,,+1-748-458-3838,639-675-3159,,1554 First Blvd,,Baltimore,MD,52579,GB,"1554 First Blvd, Baltimore, MD 52579","July 07, 2019",,inactive,,5211.37,30 days
+CL-0193,"Evans, Karen",Karen,Evans,,,karen.evans@example.com,,(727) 306-4768,,,6009 Oak Blvd,,Milwaukee,WI,64182,United Kingdom,"6009 Oak Blvd, Milwaukee, WI 64182","September 12, 2021",06/30/23,suspended,,43674.06,COD
+CL-0194,TechnoLogic,,,TechnoLogic,corporation,legal@technologic.com,,+1 345 616 4589,1-537-256-1455,+1-237-970-6338,9798 Second Way,,Memphis,TN,65569,CA,,22-01-2022,,,,26635.07,
+CL-0195,"Ramirez, Betty",Betty,Ramirez,,person,betty.ramirez@example.com,,764.557.5230,239.373.7627,,5687 First Dr,,San Jose,CA,96632,GB,,04/28/21,2024/12/07,ACTIVE,,13789.1,
+CL-0196,"Johnson, Charles",Charles,Johnson,,,,,1-946-521-8446,,,4225 Lincoln Ave,,Louisville,KY,45337,India,,01/23/20,08/24/24,active,,39192.65,30 days
+CL-0197,"Perez, Patricia",Patricia,Perez,,person,patricia.perez_at_example.com,,1-610-516-7162,(729) 505-1829,881-219-6162,1606 Main Way,,Albuquerque,NM,94539,GB,"1606 Main Way, Albuquerque, NM 94539",2020/01/01,07 March 2023,suspended,,,30 days
+CL-0198,"Perez, Susan",Susan,Perez,,individual,susan.perez@example.com,,1-484-711-2765,+1 446 735 3414,,1796 Second St,Suite 141,Oklahoma City,OK,40338,Brazil,"1796 Second St, Oklahoma City, OK 40338",2023-12-27,"November 21, 2023",suspended,,,
+CL-0199,TechSolutions Corp,,,TechSolutions Corp,corporation,legal@techsolutionscorp.com,,568 340 7690,359-853-8901,585-650-6691,2087 Washington St,Suite 531,Louisville,KY,57088,Canada,,19/06/23,,inactive,Legacy client record,11522.37,
+CL-0200,"Nguyen, Karen",Karen,Nguyen,,person,,,922.764.4310,865-403-8192,,9931 Park Way,Suite 350,Denver,CO,95033,United Kingdom,,01/20/19,,ACTIVE,Legacy client record,33489.63,COD
+CL-0201,"Garcia, Kenneth",Kenneth,Garcia,,person,kenneth.garcia@example.com,,863 993 5843,522.418.7021,,3992 Lincoln Ave,,Los Angeles,CA,49231,China,"3992 Lincoln Ave, Los Angeles, CA 49231",08-01-2023,,active,,41947.98,30 days
+CL-0202,"Stewart, Michelle",Michelle,Stewart,,person,michelle.stewart@example.com,,(806) 383-7628,+1 826 738 8305,,1872 Second Dr,Suite 217,Las Vegas,NV,35909,China,,09/07/2019,11-05-2024,suspended,Legacy client record,30915.7,
+CL-0203,"Davis, Sharon",Sharon,Davis,,person,sharon.davis@example.com,,670 769 9857,307 659 7582,,2983 Oak Dr,,San Antonio,TX,86891,USA,,22-02-2019,,suspended,,6174.63,
+CL-0204,"Jackson, Charles",Charles,Jackson,,,charles.jackson@example.com,,(310) 332-9232,606.700.6914,1-268-290-3334,7956 Oak St,,Milwaukee,WI,70077,France,,01-12-2020,,suspended,,47386.1,Net 30
+CL-0205,"Miller, Sandra",Sandra,Miller,,,sandra.miller@example.com,,+1 835 795 6247,,,5141 Lincoln Way,,Charlotte,NC,45077,France,,"February 26, 2023",,ACTIVE,Legacy client record,30060.07,15 days
+CL-0206,TechnoLogic,,,TechnoLogic,company,legal@technologic.com,,643.441.2094,242 450 8470,,9103 Oak Blvd,Suite 993,San Jose,CA,68839,CN,,19 May 2019,,,,33514.74,
+CL-0207,"Davis, Joshua",Joshua,Davis,,person,,,252-526-7335,217 223 9704,1-474-817-2333,1257 Washington St,,Jacksonville,FL,57322,CA,,"October 27, 2022",,inactive,Legacy client record,,
+CL-0208,TechStream Ltd,,,TechStream Ltd,corporation,legal@techstreamltd.com,,518.602.8047,1-887-584-1568,,2580 First Ave,,Charlotte,NC,96433,AU,,2018/07/23,,Active,,34525.84,15 days
+CL-0209,Patricia Wright,Patricia,Wright,,,,,996 702 8330,+1-414-909-4850,,255 Second Way,,Memphis,TN,68184,United Kingdom,"255 Second Way, Memphis, TN 68184",04-13-2022,,suspended,Legacy client record,,COD
+CL-0210,SystemCore,,,SystemCore,corporation,legal@systemcore.com,,1-393-845-7512,923-635-5373,,1314 Park Way,Suite 808,Detroit,MI,88708,UK,,01-04-2019,09/20/24,inactive,,4723.86,
+CL-0211,"Davis, James",James,Davis,,person,james.davis@example.com,,1-894-407-6877,+1 300 772 7544,,4345 Main Ave,Suite 406,Milwaukee,WI,22255,China,,11/09/2023,,Active,,43525.16,
+CL-0212,Sharon Harris,Sharon,Harris,,person,sharon.harris@example.com,,+1 487 923 4231,588.264.7869,,5678 Oak Dr,,San Francisco,CA,97587,IN,,19/09/20,2023/10/25,suspended,,41374.42,
+CL-0213,"Young, Michael",Michael,Young,,individual,michael.young@example.com,,+1 901 250 6229,,,5355 First Dr,,Austin,TX,99858,FR,,09-08-2019,,active,,,30 days
+CL-0214,"Martinez, Anthony",Anthony,Martinez,,individual,anthony.martinez@example.com,,(626) 981-9370,,,6878 First Ave,Suite 234,Houston,TX,37493,United Kingdom,"6878 First Ave, Houston, TX 37493",09-10-2023,"December 20, 2024",active,Legacy client record,25129.59,15 days
+CL-0215,"Parker, Dorothy",Dorothy,Parker,,person,,,903.827.4565,,747 941 3746,9560 Main St,Suite 859,Memphis,TN,83759,CA,"9560 Main St, Memphis, TN 83759",07-18-2022,29/10/2024,inactive,,36466.99,
+CL-0216,"Moore, Thomas",Thomas,Moore,,individual,,,+1 922 605 1188,(870) 756-1621,,6231 Washington Dr,,Baltimore,MD,10566,CA,,2021-01-09,,ACTIVE,,17475.63,
+CL-0217,Ruth Lewis,Ruth,Lewis,,individual,ruth.lewis@example.com,,+1 443 392 3376,679 899 5569,,5968 Park Way,Suite 608,San Jose,CA,90822,FR,,2021-06-07,,ACTIVE,,17220.27,30 days
+CL-0218,"Taylor, Daniel",Daniel,Taylor,,,daniel.taylor@example.com,,1-440-584-1442,1-313-602-7989,,7339 Washington Way,,Fort Worth,TX,56295,JP,"7339 Washington Way, Fort Worth, TX 56295",06-16-2021,08/09/2024,,,35678.68,COD
+CL-0219,Biotech Solutions Corp,,,Biotech Solutions Corp,,legal@biotechsolutionscorp.com,,(400) 386-3823,+1 851 642 8245,,6053 First St,,Las Vegas,NV,81798,CN,,07/27/20,"October 14, 2023",ACTIVE,,44039.39,
+CL-0220,Edward Morales,Edward,Morales,,individual,edward.morales@example.com,,1-830-877-8787,+1-237-330-5940,,9825 Lincoln Way,,Baltimore,MD,23987,Canada,,01/31/2018,31/01/2023,active,,32112.55,
+CL-0221,"Johnson, Linda",Linda,Johnson,,,linda.johnson@example.com,,1-799-547-5134,(433) 488-7929,213.924.1985,5987 Main Ave,Suite 692,Indianapolis,IN,44691,US,"5987 Main Ave, Indianapolis, IN 44691",24/09/2021,23/02/2023,Active,,44376.18,Net 30
+CL-0222,TechWorld,,,TechWorld,,legal@techworld.com,,(970) 812-5187,(489) 551-4713,217 967 7389,3377 Washington Dr,,Las Vegas,NV,53058,US,,08-09-2023,,Active,,,
+CL-0223,"Scott, Sarah",Sarah,Scott,,person,sarah.scott@example.com,,(748) 644-9481,N/A,,3511 Main Ave,,Oklahoma City,OK,23813,Germany,,05/16/2018,09/02/2024,active,,17148.83,COD
+CL-0224,"Anderson, Lisa",Lisa,Anderson,,individual,lisa.anderson@example.com,,+1 328 393 4496,+1-672-565-9250,,8005 Park Blvd,Suite 652,Houston,TX,15436,US,,2018/03/21,2024-12-13,inactive,,4713.95,
+CL-0225,"Martinez, Mary",Mary,Martinez,,individual,mary.martinez@example.com,,389-641-7920,+1-273-328-7392,,1694 Washington Blvd,Suite 672,Charlotte,NC,71354,USA,"1694 Washington Blvd, Charlotte, NC 71354",03/04/2023,05/10/2024,inactive,,2886.33,
+CL-0226,"Morris, Karen",Karen,Morris,,individual,,,+1-576-477-5025,,,9265 Oak Dr,Suite 903,Chicago,IL,91501,FR,"9265 Oak Dr, Chicago, IL 91501",03/04/20,15-11-2024,,,,
+CL-0227,InnovateNow Ltd,,,InnovateNow Ltd,,legal@innovatenowltd.com,,878.278.6819,937.378.3315,1-845-344-3406,7637 First Way,Suite 426,Jacksonville,FL,83259,Canada,"7637 First Way, Jacksonville, FL 83259",11 November 2021,,ACTIVE,Legacy client record,33186.06,
+CL-0228,"Collins, Joshua",Joshua,Collins,,individual,joshua.collins@example.com,,+1 650 599 6044,981 994 8946,,4306 Oak Ave,,Oklahoma City,OK,10296,IN,"4306 Oak Ave, Oklahoma City, OK 10296",05-17-2019,31-03-2023,ACTIVE,,37827.16,30 days
+CL-0229,Nancy Edwards,Nancy,Edwards,,person,nancy.edwards@example.com,,+1-586-467-5329,(236) 422-5710,,1937 Main Way,,Nashville,TN,81857,IN,,"August 22, 2020",01 September 2023,ACTIVE,Legacy client record,48123.07,Net 30
+CL-0230,"Nguyen, Jennifer",Jennifer,Nguyen,,individual,jennifer.nguyen@example.com,,743-924-4030,+1 327 901 6125,,8279 Park Way,,New York,NY,23586,FR,,30-05-2022,,suspended,,6128.83,COD
+CL-0231,DataTech,,,DataTech,,legal@datatech.com,,1-750-751-3822,672.476.4469,,4317 First Dr,,Houston,TX,24968,GB,,10/07/22,02/09/2024,suspended,,34144.21,
+CL-0232,"Garcia, George",George,Garcia,,,george.garcia@example.com,,417-748-1884,681-969-6873,,8179 Park Dr,Suite 485,Washington,DC,45206,India,"8179 Park Dr, Washington, DC 45206",13-03-2019,2023/06/28,inactive,Legacy client record,,
+CL-0233,TechSolutions,,,TechSolutions,corporation,legal@techsolutions.com,,249 546 5007,+1-977-628-5741,,4353 Park Blvd,,El Paso,TX,68218,China,,24/11/2020,05 November 2024,Active,,33997.53,COD
+CL-0234,SystemTech,,,SystemTech,corporation,legal@systemtech.com,,652.326.5934,,,7949 First Way,,Baltimore,MD,40335,Australia,,01/06/18,28-07-2024,ACTIVE,,,
+CL-0235,InfoSys Inc,,,InfoSys Inc,,legal@infosysinc.com,,723.762.1516,,,6009 Second Way,Suite 501,Chicago,IL,41700,FR,,07/12/20,,,,5787.49,Net 30
+CL-0236,InnovaTech,,,InnovaTech,company,legal@innovatech.com,,824.280.6577,,,7341 Oak Ave,,Portland,OR,14282,AU,"7341 Oak Ave, Portland, OR 14282",02-01-2019,11/08/23,active,,43473.32,
+CL-0237,TechVision Ltd,,,TechVision Ltd,,legal@techvisionltd.com,,(544) 919-8047,718 947 2360,,8273 Second Dr,,Albuquerque,NM,12213,US,,"October 11, 2023",18/10/2023,suspended,,36387.78,
+CL-0238,"Ramirez, Elizabeth",Elizabeth,Ramirez,,individual,elizabeth.ramirez@example.com,,476-672-5704,819-899-5678,,3717 Oak Blvd,,San Diego,CA,70449,Brazil,,"August 14, 2021",05 November 2024,ACTIVE,,,
+CL-0239,SystemFlow Ltd,,,SystemFlow Ltd,company,,,262.750.1241,,,9984 Park Blvd,,El Paso,TX,54970,DE,,2023-10-25,,inactive,,34481.04,Net 30
+CL-0240,"Morales, Dorothy",Dorothy,Morales,,,dorothy.morales@example.com,,911-499-8430,,,6009 Washington Way,,Philadelphia,PA,32246,USA,,06/28/20,24 May 2024,ACTIVE,,23211.02,
+CL-0241,TechnoLogic LLC,,,TechnoLogic LLC,,legal@technologicllc.com,,N/A,(248) 477-2627,,4337 Second Dr,Suite 885,Baltimore,MD,23834,India,"4337 Second Dr, Baltimore, MD 23834",2021/08/14,,Active,Legacy client record,,
+CL-0242,Ryan Lewis,Ryan,Lewis,,person,ryan.lewis@example.com,,+1-750-453-6380,+1-279-523-4702,957-238-3631,2862 First St,,Dallas,TX,64946,Germany,,08/08/2019,,inactive,,,30 days
+CL-0243,"Gomez, Sarah",Sarah,Gomez,,individual,,,706-822-8979,,,8472 Lincoln Dr,,Detroit,MI,41132,Deutschland,,04/07/2019,07-28-2024,Active,,27636.68,
+CL-0244,"Phillips, Jason",Jason,Phillips,,,jason.phillips@example.com,,+1-593-422-9986,841 757 2303,,5503 Washington Dr,,Jacksonville,FL,88075,United States,,03/28/19,19/02/24,active,,,
+CL-0245,"Stewart, Jennifer",Jennifer,Stewart,,person,jennifer.stewart@example.com,,744.905.1067,,,9800 Main St,,Los Angeles,CA,67927,USA,,11/18/2018,,,,,COD
+CL-0246,"Phillips, Donna",Donna,Phillips,,person,,,1-968-811-9699,,,9813 Main Dr,Suite 286,Baltimore,MD,39603,JP,"9813 Main Dr, Baltimore, MD 39603",12-11-2020,06-04-2023,Active,,14902.42,Net 30
+CL-0247,"Clark, Michael",Michael,Clark,,,,,361-431-7608,+1-408-244-7085,,6923 First Blvd,Suite 399,Milwaukee,WI,58199,Brazil,,24/08/2022,,Active,,,15 days
+CL-0248,TechLink,,,TechLink,company,legal@techlink.com,,1-945-342-5002,250 581 7816,,6884 Second Way,,San Jose,CA,90403,Brazil,,04 January 2023,08/10/23,,,25485.2,15 days
+CL-0249,Edward Miller,Edward,Miller,,,edward.miller@example.com,,1-282-819-2976,,,1810 First Ave,,Albuquerque,NM,53017,Germany,"1810 First Ave, Albuquerque, NM 53017",2019-10-06,"October 30, 2023",,,27033.41,COD
+CL-0250,SmartSystems,,,SmartSystems,company,legal@smartsystems.com,,572-895-5881,+1 238 296 9808,,3234 Main Blvd,,Houston,TX,68653,IN,,07/04/2018,,Active,Legacy client record,,
+CL-0251,"Smith, Robert",Robert,Smith,,person,robert.smith@example.com,,+1 422 555 3612,,+1 552 464 4860,8588 Park St,,El Paso,TX,99279,China,"8588 Park St, El Paso, TX 99279",08/12/18,10/05/23,active,Legacy client record,10445.48,Net 30
+CL-0252,"Lewis, Jacob",Jacob,Lewis,,person,,,+1 670 454 4964,(382) 488-4367,,3645 Park Ave,,Washington,DC,90329,DE,,05/09/2020,"November 06, 2023",Active,Legacy client record,,Net 30
+CL-0253,"Rivera, Andrew",Andrew,Rivera,,,andrew.rivera@example.com,,(712) 763-6410,,,7400 Washington Dr,,San Francisco,CA,78001,JP,"7400 Washington Dr, San Francisco, CA 78001",18/06/18,,inactive,,,
+CL-0254,"Flores, Charles",Charles,Flores,,,charles.flores@example.com,,+1 723 577 3773,379-280-4150,,184 Lincoln Blvd,,San Jose,CA,62747,IN,"184 Lincoln Blvd, San Jose, CA 62747",TBD,,Active,,31354.61,30 days
+CL-0255,"Carter, Dorothy",Dorothy,Carter,,individual,,,(679) 862-2986,596.741.1257,,5938 Main Dr,Suite 779,Detroit,MI,13003,Germany,,07-20-2023,,active,,6740.59,30 days
+CL-0256,"Lee, Charles",Charles,Lee,,person,charles.lee@example.com,,+1 482 727 2860,,,707 Park St,Suite 924,Louisville,KY,78218,USA,,22-06-2021,,active,,,
+CL-0257,CyberSoft,,,CyberSoft,,legal@cybersoft.com,,(755) 299-6699,,(530) 767-3154,3828 First Ave,,Jacksonville,FL,14647,BR,,2018/12/02,,suspended,,21288.58,COD
+CL-0258,"Jackson, Edward",Edward,Jackson,,,edward.jackson@example.com,,550-317-2053,,,4693 Park St,,Memphis,TN,79658,GB,"4693 Park St, Memphis, TN 79658",01 February 2018,,suspended,,35077.21,COD
+CL-0259,"Parker, Mary",Mary,Parker,,person,mary.parker@example.com,,1-451-402-5383,645.768.1007,,230 Main Way,Suite 961,Nashville,TN,40937,BR,"230 Main Way, Nashville, TN 40937",30-08-2021,,ACTIVE,,42830.13,30 days
+CL-0260,"Jackson, Donna",Donna,Jackson,,individual,donna.jackson@example.com,,693.825.5078,806-642-1001,+1 753 525 2365,3829 Second Blvd,,Los Angeles,CA,26560,UK,"3829 Second Blvd, Los Angeles, CA 26560",11-07-2018,2023-07-24,inactive,,10537.23,COD
+CL-0261,TechNet,,,TechNet,company,legal@technet.com,,782-410-2939,1-399-557-9570,,6273 Second Ave,,Charlotte,NC,74599,United States,,17 December 2022,,ACTIVE,,45415.38,30 days
+CL-0262,"King, Lisa",Lisa,King,,,lisa.king@example.com,,(634) 628-9281,,,7958 Main Blvd,Suite 459,Charlotte,NC,59159,CN,"7958 Main Blvd, Charlotte, NC 59159",04 May 2018,,,,13520.24,
+CL-0263,"Carter, Helen",Helen,Carter,,,helen.carter@example.com,,678.705.1530,+1-905-759-6873,,701 Lincoln Way,,Jacksonville,FL,75563,IN,,2023-12-07,,ACTIVE,Legacy client record,12212.03,Net 30
+CL-0264,"Martinez, Kimberly",Kimberly,Martinez,,individual,,,653.513.7549,+1-744-693-4300,,3614 First Ave,Suite 649,San Antonio,TX,72842,Brazil,"3614 First Ave, San Antonio, TX 72842",14/08/2018,02-11-2024,ACTIVE,,18613.07,15 days
+CL-0265,"Diaz, Donna",Donna,Diaz,,person,donna.diaz@example.com,,(474) 362-5142,1-295-894-6620,,3570 First Way,,Chicago,IL,69332,Japan,,07 November 2019,19-03-2023,suspended,,35250.1,30 days
+CL-0266,InnovaSoft LLC,,,InnovaSoft LLC,company,,,+1 962 231 1700,352.873.3697,,925 Washington Blvd,,Philadelphia,PA,96356,Australia,,27/08/2021,,suspended,,30924.56,
+CL-0267,"Hill, Edward",Edward,Hill,,,edward.hill@example.com,,950.334.1054,,,8237 Park Blvd,,New York,NY,16455,DE,,01/16/2022,,ACTIVE,Legacy client record,22297.49,
+CL-0268,"Collins, Jacob",Jacob,Collins,,person,jacob.collins@example.com,,871.833.5751,773-995-7807,,5370 Washington St,,Oklahoma City,OK,90004,Brazil,,"November 28, 2021",08-15-2024,active,,41018.77,15 days
+CL-0269,SystemCore LLC,,,SystemCore LLC,company,legal@systemcorellc.com,,462 824 1173,,,4126 Main Blvd,,Memphis,TN,86686,USA,,05 May 2022,18-10-2023,Active,,17820.68,15 days
+CL-0270,GlobalTech LLC,,,GlobalTech LLC,,legal@globaltechllc.com,,+1-957-948-4919,573.259.2681,,7001 First Ave,Suite 388,Phoenix,AZ,74745,United States,"7001 First Ave, Phoenix, AZ 74745",05/18/20,13 January 2024,,,3322.04,15 days
+CL-0271,"Mitchell, Brian",Brian,Mitchell,,person,brian.mitchell@example.com,,463-757-1883,,244-385-4424,2639 Main Dr,,Chicago,IL,25388,JP,,08/10/20,2023/02/19,Active,,44297.35,COD
+CL-0272,GlobalTech,,,GlobalTech,corporation,legal@globaltech.com,,+1 494 421 1688,N/A,,668 Park Way,,San Antonio,TX,16586,BR,"668 Park Way, San Antonio, TX 16586","December 21, 2022",,inactive,Legacy client record,,15 days
+CL-0273,Biotech Solutions,,,Biotech Solutions,,legal@biotechsolutions.com,,610 805 1402,,,9076 First Blvd,,New York,NY,50059,Germany,,20-08-2021,12/11/23,suspended,,35289.48,30 days
+CL-0274,GlobalTech Ltd,,,GlobalTech Ltd,company,,,(734) 525-1171,331 710 7057,,3152 Park Blvd,,Denver,CO,14379,Canada,"3152 Park Blvd, Denver, CO 14379",31/10/21,N/A,active,,,COD
+CL-0275,Nancy Young,Nancy,Young,,individual,nancy.young@example.com,,+1 336 475 9993,+1-465-756-4207,,3307 Washington Ave,Suite 782,New York,NY,45534,BR,,26 June 2019,,ACTIVE,,1371.41,30 days
+CL-0276,DataCore Inc,,,DataCore Inc,company,legal@datacoreinc.com,,413-597-7738,,,4151 Oak Way,Suite 184,Louisville,KY,56474,DE,,"November 03, 2023",,active,,,COD
+CL-0277,Biotech Solutions,,,Biotech Solutions,,legal@biotechsolutions.com,,1-379-687-2393,(302) 628-5549,,4743 Oak Way,,Fort Worth,TX,43124,USA,,06/21/20,,suspended,,16520.96,15 days
+CL-0278,TechnoLogic Corp,,,TechnoLogic Corp,,legal@technologiccorp.com,,(694) 368-1957,373.984.5152,,9046 Park Blvd,,Washington,DC,98064,DE,,13 September 2020,02/04/23,inactive,Legacy client record,,COD
+CL-0279,Jason Allen,Jason,Allen,,individual,jason.allen@example.com,,+1 845 249 2078,527 410 9844,,4502 Second Blvd,,Phoenix,AZ,13577,France,,2018-10-27,09/30/2023,Active,,2796.11,COD
+CL-0280,"Nguyen, Nancy",Nancy,Nguyen,,person,nancy.nguyen@example.com,,439.766.2919,,509-896-7222,8277 Park Way,,Austin,TX,76819,India,,02 November 2019,02/28/2023,,,,30 days
+CL-0281,"Martinez, Kevin",Kevin,Martinez,,individual,kevin.martinez@example.com,,934-449-1755,,,2859 Park Ave,Suite 697,Oklahoma City,OK,94425,IN,,"March 15, 2023",,,Legacy client record,39779.62,15 days
+CL-0282,SystemCore Corp,,,SystemCore Corp,corporation,legal@systemcorecorp.com,,+1 326 442 4202,(547) 797-7531,,7863 Park St,,Houston,TX,40822,CA,"7863 Park St, Houston, TX 40822",10/15/2019,12/09/2024,ACTIVE,,,Net 30
+CL-0283,HealthTech Inc,,,HealthTech Inc,corporation,legal@healthtechinc.com,,212.839.8399,,501.631.8144,3286 Second Ave,,Fort Worth,TX,38489,CA,,"April 06, 2019",2024-08-15,inactive,,46361.54,
+CL-0284,"Roberts, Donna",Donna,Roberts,,,donna.roberts@example.com,,+1 626 253 5508,561 359 6916,,23 Main Ave,,Nashville,TN,33575,India,"23 Main Ave, Nashville, TN 33575",2018/07/15,,ACTIVE,,9177.97,30 days
+CL-0285,Biotech Solutions LLC,,,Biotech Solutions LLC,company,legal@biotechsolutionsllc.com,,+1-594-452-9445,,,5579 Oak Dr,Suite 603,Milwaukee,WI,53097,United Kingdom,"5579 Oak Dr, Milwaukee, WI 53097",05/04/2019,05/24/2023,inactive,,,30 days
+CL-0286,"Rivera, George",George,Rivera,,,george.rivera@example.com,,1-218-502-2005,313.450.2187,(829) 910-9695,539 Lincoln St,,Jacksonville,FL,43110,Brazil,,10 October 2019,"May 15, 2024",active,,,
+CL-0287,Jacob Rodriguez,Jacob,Rodriguez,,individual,jacob.rodriguez@example.com,,+1 207 322 2018,+1-612-770-3509,,6626 Washington Dr,Suite 122,Phoenix,AZ,86211,US,"6626 Washington Dr, Phoenix, AZ 86211",04/21/22,2024/03/28,inactive,,6730.85,Net 30
+CL-0288,DataCore Inc,,,DataCore Inc,,legal_at_datacoreinc.com,,304 474 7014,381.678.9674,,2383 Washington Dr,Suite 443,Jacksonville,FL,87208,CA,"2383 Washington Dr, Jacksonville, FL 87208",09/09/22,,active,,15561.81,30 days
+CL-0289,"Nguyen, Gary",Gary,Nguyen,,person,gary.nguyen@example.com,,231-756-5551,,,7458 Main Ave,,Indianapolis,IN,87857,United States,"7458 Main Ave, Indianapolis, IN 87857",24/02/2023,12/02/2024,active,,,15 days
+CL-0290,"White, Laura",Laura,White,,,laura.white@example.com,,1-726-297-2634,+1 705 477 7419,,8565 First St,,San Diego,CA,89603,China,"8565 First St, San Diego, CA 89603","December 12, 2022",2023-02-17,inactive,Legacy client record,33299.44,
+CL-0291,TechVision LLC,,,TechVision LLC,,,,422.301.5304,+1 368 270 9699,,3430 Washington Blvd,,Austin,TX,88784,Australia,"3430 Washington Blvd, Austin, TX 88784",07-25-2021,01-07-2024,suspended,,,Net 30
+CL-0292,"Phillips, Sarah",Sarah,Phillips,,person,sarah.phillips@example.com,,+1 596 301 7422,,,7139 First St,Suite 680,Houston,TX,85655,UK,,2021/11/26,25/05/23,active,,42705.77,15 days
+CL-0293,Materials Inc,,,Materials Inc,corporation,legal@materialsinc.com,,+1-543-503-7593,362.522.3400,,3993 Lincoln Ave,,Phoenix,AZ,41207,Australia,"3993 Lincoln Ave, Phoenix, AZ 41207",2018-07-29,,Active,,21765.25,30 days
+CL-0294,"Lewis, Lisa",Lisa,Lewis,,person,lisa.lewis@example.com,,+1 845 987 5926,+1 272 472 4525,595.955.7526,8959 Washington Ave,,Washington,DC,47836,CN,"8959 Washington Ave, Washington, DC 47836",10/19/2019,,suspended,Legacy client record,,
+CL-0295,TechVision Inc,,,TechVision Inc,,legal@techvisioninc.com,,220.680.6052,656-795-7053,,6891 Lincoln Dr,Suite 511,Baltimore,MD,13640,UK,"6891 Lincoln Dr, Baltimore, MD 13640",16 November 2021,02-04-2024,active,,,15 days
+CL-0296,"Sanchez, Dorothy",Dorothy,Sanchez,,individual,dorothy.sanchez@example.com,,+1-462-358-5176,1-890-841-9090,,7567 Lincoln Way,,Memphis,TN,22324,Japan,"7567 Lincoln Way, Memphis, TN 22324",2022-02-11,"June 29, 2024",suspended,,12323.79,
+CL-0297,Sandra Martin,Sandra,Martin,,individual,sandra.martin@example.com,,Unknown,,,1382 First Blvd,Suite 852,Charlotte,NC,15921,USA,,26-04-2020,19-07-2023,active,,43588.68,15 days
+CL-0298,InfoSys,,,InfoSys,corporation,legal@infosys.com,,(978) 405-4024,+1 551 362 3183,N/A,8733 Main Ave,,Detroit,MI,33079,CN,,01 July 2018,06/03/2023,ACTIVE,,,
+CL-0299,"Hill, Deborah",Deborah,Hill,,person,deborah.hill@example.com,,496 503 8556,,,7802 Park Dr,Suite 312,Louisville,KY,67452,United Kingdom,,03/26/2020,,,,,COD
+CL-0300,SystemTech Inc,,,SystemTech Inc,,legal@systemtechinc.com,,1-361-836-2915,1-814-767-8130,,3213 Park Way,,El Paso,TX,89716,Australia,,11/05/18,2024-01-08,suspended,Legacy client record,48046.33,
+CL-0301,"Sanchez, Thomas",Thomas,Sanchez,,,thomas.sanchez@example.com,,(538) 525-4352,+1 819 508 3830,,2754 Washington St,Suite 295,Dallas,TX,78699,Deutschland,"2754 Washington St, Dallas, TX 78699",04-05-2021,18 January 2023,,Legacy client record,,
+CL-0302,Linda Gomez,Linda,Gomez,,person,linda.gomez@example.com,,Unknown,,,3782 Main Blvd,,Milwaukee,WI,73807,AU,,03/18/2018,"May 19, 2023",suspended,,18197.3,COD
+CL-0303,"Rivera, Mary",Mary,Rivera,,,mary.rivera@example.com,,670.244.5761,733-314-3655,,4624 Park Dr,,Portland,OR,33371,Canada,"4624 Park Dr, Portland, OR 33371",2018-07-03,,Active,,,15 days
+CL-0304,"Jones, Lisa",Lisa,Jones,,individual,lisa.jones_at_example.com,,+1-379-925-5556,+1 967 866 8573,,3649 Washington St,,Phoenix,AZ,53924,Canada,"3649 Washington St, Phoenix, AZ 53924",20-02-2019,27-07-2024,ACTIVE,,45313.26,Net 30
+CL-0305,DataFlow,,,DataFlow,corporation,legal@dataflow.com,,458-361-3351,+1 677 568 8321,,4329 Washington Way,,Oklahoma City,OK,45698,Deutschland,,09/02/21,25-10-2023,suspended,,,
+CL-0306,"Miller, Helen",Helen,Miller,,,helen.miller@example.com,,N/A,617-588-8561,,7231 Second Blvd,,Austin,TX,42328,Australia,"7231 Second Blvd, Austin, TX 42328",02/11/21,2023-05-23,,Legacy client record,,
+CL-0307,"Wright, Gary",Gary,Wright,,individual,,,1-346-899-5281,823-710-9185,,8573 First Ave,,Memphis,TN,15336,United Kingdom,,"February 09, 2019",,inactive,,7085.87,
+CL-0308,TechGrid Corp,,,TechGrid Corp,company,legal@techgridcorp.com,,1-251-220-9616,,434 234 9113,5184 Park Blvd,Suite 779,Memphis,TN,64554,BR,"5184 Park Blvd, Memphis, TN 64554",12/24/20,,Active,Legacy client record,,15 days
+CL-0309,"Turner, Kevin",Kevin,Turner,,individual,kevin.turner@example.com,,+1 272 557 7114,1-978-511-2540,,9341 Lincoln Dr,Suite 396,New York,NY,99353,China,"9341 Lincoln Dr, New York, NY 99353",20/11/2018,2024-09-20,ACTIVE,Legacy client record,8814.78,
+CL-0310,GlobalTech,,,GlobalTech,,legal@globaltech.com,,799.942.5113,737-415-1494,,7141 Washington Ave,,Memphis,TN,19867,CN,"7141 Washington Ave, Memphis, TN 19867",2018-05-12,15/06/2024,suspended,,49861.1,Net 30
+CL-0311,"Martinez, Ronald",Ronald,Martinez,,,,,+1 813 564 6042,780.290.6081,,6405 Lincoln Dr,Suite 800,Charlotte,NC,59191,UK,,01/08/19,2023-12-11,inactive,,33762.53,30 days
+CL-0312,Ruth Green,Ruth,Green,,person,ruth.green@example.com,,915-521-9010,(886) 738-4372,,3752 Lincoln St,,Baltimore,MD,11389,Brazil,"3752 Lincoln St, Baltimore, MD 11389",12/04/2020,12-19-2023,active,,17481.38,
+CL-0313,David Torres,David,Torres,,,david.torres@example.com,,(575) 334-7705,(309) 848-1403,,6326 Second Way,,Boston,MA,46909,CN,"6326 Second Way, Boston, MA 46909",2018-05-03,05/24/23,,,,
+CL-0314,"King, Paul",Paul,King,,person,paul.king@example.com,,+1 426 234 4643,,,8315 First St,Suite 788,Washington,DC,95112,Deutschland,,07/21/2022,TBD,Active,,,
+CL-0315,"Baker, Kenneth",Kenneth,Baker,,individual,kenneth.baker@example.com,,+1 232 909 6041,,,6831 Oak St,,Jacksonville,FL,73164,UK,"6831 Oak St, Jacksonville, FL 73164",07/08/2019,"February 12, 2023",suspended,,,
+CL-0316,"Phillips, John",John,Phillips,,person,,,+1-883-920-4714,+1 629 322 4172,(343) 429-9847,7807 Lincoln Way,Suite 617,Dallas,TX,69566,China,,2020-12-02,,Active,,,Net 30
+CL-0317,"Nelson, Jeffrey",Jeffrey,Nelson,,individual,,,000-000-0000,,,1184 Park Blvd,,Las Vegas,NV,75113,United States,"1184 Park Blvd, Las Vegas, NV 75113",08-24-2019,,suspended,Legacy client record,46662.42,
+CL-0318,"Murphy, Patricia",Patricia,Murphy,,,,,949.709.1363,(311) 447-5190,,1503 Oak St,,Las Vegas,NV,31267,France,,24-10-2023,,active,Legacy client record,,
+CL-0319,"Allen, Michelle",Michelle,Allen,,individual,michelle.allen@example.com,,Unknown,771-351-2073,,4507 First Ave,Suite 458,New York,NY,79601,GB,"4507 First Ave, New York, NY 79601",2018-09-10,2023-02-01,inactive,,30276.19,COD
+CL-0320,GlobalTech,,,GlobalTech,,legal@globaltech.com,,+1-406-603-6776,979 821 1478,,5380 Washington Way,,Chicago,IL,77523,Japan,"5380 Washington Way, Chicago, IL 77523",2021-07-17,01-04-2023,ACTIVE,,,
+CL-0321,Lisa Brown,Lisa,Brown,,individual,lisa.brown@example.com,,+1-598-435-5575,+1 841 410 9686,535.252.7182,634 Oak Dr,,Philadelphia,PA,44113,China,"634 Oak Dr, Philadelphia, PA 44113","July 15, 2023","October 28, 2024",,,,15 days
+CL-0322,Jeffrey Morris,Jeffrey,Morris,,individual,jeffrey.morris@example.com,,+1 959 713 5624,,,4362 Lincoln Dr,,Louisville,KY,36878,Deutschland,"4362 Lincoln Dr, Louisville, KY 36878",03-07-2019,27-06-2023,,Legacy client record,34809.7,Net 30
+CL-0323,"Torres, Nancy",Nancy,Torres,,person,nancy.torres@example.com,,620-889-1352,,,9368 Park Ave,Suite 346,San Jose,CA,88002,IN,,16 June 2023,,Active,,,COD
+CL-0324,SmartSystems,,,SmartSystems,corporation,legal@smartsystems.com,,1-890-504-3334,(809) 909-6029,,4775 Oak Way,Suite 745,Fort Worth,TX,75195,Canada,,04-08-2020,09-26-2023,ACTIVE,,40150.2,Net 30
+CL-0325,"Thompson, Ryan",Ryan,Thompson,,individual,ryan.thompson@example.com,,(284) 274-4471,454-347-3334,,7352 Main Ave,,Baltimore,MD,22804,Canada,"7352 Main Ave, Baltimore, MD 22804",2018/05/06,,Active,Legacy client record,22650.23,
+CL-0326,"Nelson, William",William,Nelson,,individual,william.nelson@example.com,,327-875-9591,,,9072 Main Ave,,Austin,TX,79932,China,"9072 Main Ave, Austin, TX 79932",2019/03/05,,suspended,,8879.36,COD
+CL-0327,"Reyes, Ronald",Ronald,Reyes,,,,,518-961-9604,,,684 Park Way,,Seattle,WA,13526,Australia,,08/04/2019,24/05/23,ACTIVE,Legacy client record,29122.94,
+CL-0328,Biotech Solutions Inc,,,Biotech Solutions Inc,,legal@biotechsolutionsinc.com,,1-690-419-1035,982-218-5425,,1432 Main Ave,,Memphis,TN,78203,United Kingdom,"1432 Main Ave, Memphis, TN 78203",20 April 2023,,suspended,Legacy client record,43092.95,30 days
+CL-0329,InnovateX,,,InnovateX,corporation,legal@innovatex.com,,1-922-687-8161,463-338-8938,,6725 Main Way,,Seattle,WA,13615,Australia,,03/11/2023,,,,,30 days
+CL-0330,"Ramirez, John",John,Ramirez,,person,john.ramirez@example.com,,(502) 605-4660,1-215-423-2713,,9684 Oak St,,Milwaukee,WI,72104,US,"9684 Oak St, Milwaukee, WI 72104",2018-07-08,,active,,,Net 30
+CL-0331,DataFlow,,,DataFlow,corporation,,,906 768 9697,486.835.4329,,7228 Washington Blvd,,Memphis,TN,59658,FR,"7228 Washington Blvd, Memphis, TN 59658",2022/05/13,30 April 2023,active,,3427.94,
+CL-0332,"Smith, Mary",Mary,Smith,,person,mary.smith@example.com,,+1-721-828-7342,1-961-740-3148,,2435 Lincoln Blvd,,Portland,OR,53120,United Kingdom,"2435 Lincoln Blvd, Portland, OR 53120",04-06-2023,,suspended,,5850.15,
+CL-0333,TechWorld,,,TechWorld,,legal@techworld.com,,(383) 866-4336,893.313.8307,,5793 Lincoln Dr,Suite 867,Charlotte,NC,90096,United States,"5793 Lincoln Dr, Charlotte, NC 90096","November 06, 2019",07-25-2024,inactive,,6738.79,
+CL-0334,SystemFlow Ltd,,,SystemFlow Ltd,company,legal@systemflowltd.com,,1-440-270-3893,(936) 912-5824,,479 Washington Way,,Austin,TX,80624,India,,29/04/2018,07 January 2023,inactive,,23593.85,15 days
+CL-0335,"Young, Christopher",Christopher,Young,,individual,christopher.young@example.com,,548 658 2806,(964) 780-3546,+1-924-775-5026,8591 Oak Blvd,,New York,NY,21532,United States,,17/05/2022,,suspended,Legacy client record,6479.11,
+CL-0336,DataFlow Inc,,,DataFlow Inc,company,legal_at_dataflowinc.com,,820-493-5510,,,8224 Washington Way,,El Paso,TX,57859,Japan,,05/20/23,,active,Legacy client record,22516.23,COD
+CL-0337,"Young, Paul",Paul,Young,,individual,,,(546) 902-6378,,,9419 Main Dr,,Seattle,WA,42240,GB,"9419 Main Dr, Seattle, WA 42240",04/01/2022,2023/07/11,active,,32445.67,COD
+CL-0338,"White, Brian",Brian,White,,,brian.white@example.com,,935.210.2650,,,8839 Lincoln Ave,,Austin,TX,85525,India,,07/11/2018,03-25-2024,ACTIVE,,39358.22,Net 30
+CL-0339,"Carter, Kevin",Kevin,Carter,,person,kevin.carter@example.com,,591-573-8680,559 229 9643,953.788.1810,2071 Park Way,,Boston,MA,31644,Brazil,,2021/04/08,06/28/24,,Legacy client record,40464.54,15 days
+CL-0340,"Johnson, Sandra",Sandra,Johnson,,,sandra.johnson@example.com,,+1 927 389 3616,,,5783 Park St,,Albuquerque,NM,96026,BR,,07-08-2018,,inactive,,2154.86,
+CL-0341,HealthTech,,,HealthTech,company,,,1-595-745-9403,+1-886-221-3555,771 967 9066,2486 Washington Blvd,,San Diego,CA,80111,Deutschland,,2021/07/10,,suspended,,20747.75,
+CL-0342,"Adams, Donna",Donna,Adams,,person,donna.adams@example.com,,517 611 3275,+1 733 642 8719,864-620-4734,3109 Park Ave,,Indianapolis,IN,25273,US,,24-01-2023,10/06/2023,active,,22049.21,15 days
+CL-0343,"Carter, Ruth",Ruth,Carter,,person,ruth.carter@example.com,,N/A,,,9065 Main St,,Baltimore,MD,16022,Brazil,"9065 Main St, Baltimore, MD 16022",2020/11/15,04/22/24,ACTIVE,,,Net 30
+CL-0344,Sarah Nelson,Sarah,Nelson,,individual,sarah.nelson@example.com,,+1 755 646 3690,,,229 Second Blvd,,San Jose,CA,59841,GB,"229 Second Blvd, San Jose, CA 59841",05-31-2023,2024/09/27,inactive,,,30 days
+CL-0345,"Hernandez, Ryan",Ryan,Hernandez,,individual,,,788 586 8929,,,2519 Second Ave,Suite 481,Indianapolis,IN,68291,United States,"2519 Second Ave, Indianapolis, IN 68291",04/04/2023,12 January 2024,,,34690.6,
+CL-0346,TechPro,,,TechPro,corporation,legal@techpro.com,,870 822 3772,714.858.7382,,9341 First Way,,Austin,TX,78680,US,"9341 First Way, Austin, TX 78680","July 28, 2021",,suspended,,,
+CL-0347,"Lopez, Michelle",Michelle,Lopez,,individual,michelle.lopez@example.com,,000-000-0000,1-876-397-7820,,2300 Washington Ave,,Indianapolis,IN,11639,IN,,31/01/23,22/04/2024,active,Legacy client record,46148.91,15 days
+CL-0348,DataDyne,,,DataDyne,,legal@datadyne.com,,1-947-800-2834,,,5029 Lincoln Dr,,El Paso,TX,64128,Canada,,28/08/2019,2023/01/19,suspended,Legacy client record,,15 days
+CL-0349,"Wright, Mary",Mary,Wright,,individual,,,(805) 769-2821,417 893 8009,(240) 267-4408,9331 Lincoln Dr,,Seattle,WA,57911,India,"9331 Lincoln Dr, Seattle, WA 57911",06/12/22,03/14/23,inactive,,42563.84,15 days
+CL-0350,"Martin, Dorothy",Dorothy,Martin,,person,dorothy.martin@example.com,,956.613.4526,,,7152 Second Way,,Denver,CO,74913,France,,08-03-2019,12/05/2024,suspended,,18452.63,
+CL-0351,"Anderson, Karen",Karen,Anderson,,individual,karen.anderson@example.com,,+1 200 468 2484,+1-718-721-3580,,4107 Second Blvd,,Charlotte,NC,69662,Brazil,,04/04/22,"January 21, 2023",Active,,,
+CL-0352,"Torres, Robert",Robert,Torres,,person,robert.torres@example.com,,(607) 659-6341,,,1262 First Way,Suite 547,San Diego,CA,40072,CA,,23/11/2018,09-09-2023,inactive,,49733.35,30 days
+CL-0353,"Turner, John",John,Turner,,person,john.turner@example.com,,791.647.6740,,,1019 Second Blvd,,Nashville,TN,85178,Germany,"1019 Second Blvd, Nashville, TN 85178",09/30/23,2024-11-11,,Legacy client record,32593.02,30 days
+CL-0354,Energy Solutions LLC,,,Energy Solutions LLC,company,,,295.812.7861,,,6633 Main Ave,,Jacksonville,FL,81221,China,,2023-01-18,,Active,Legacy client record,5273.91,30 days
+CL-0355,TechLink Ltd,,,TechLink Ltd,corporation,legal@techlinkltd.com,,927-446-1547,,,845 Washington Way,,Portland,OR,95759,DE,"845 Washington Way, Portland, OR 95759","September 24, 2022",14/06/2023,Active,Legacy client record,,30 days
+CL-0356,Industrial Systems Inc,,,Industrial Systems Inc,company,,,429 939 5143,+1 960 462 5805,692-275-5652,948 Oak Dr,,Columbus,OH,13159,Canada,"948 Oak Dr, Columbus, OH 13159","June 16, 2021",,active,,29223.22,15 days
+CL-0357,"Parker, Jessica",Jessica,Parker,,person,jessica.parker@example.com,,929 531 7487,,,2032 Lincoln Ave,,Portland,OR,50241,US,,10-16-2020,,Active,,33791.01,
+CL-0358,Mark Hill,Mark,Hill,,,,,366-803-7249,,,9433 Main Ave,Suite 478,Memphis,TN,41987,United States,,27/12/23,29/07/23,inactive,,39393.62,15 days
+CL-0359,"Carter, Timothy",Timothy,Carter,,,,,531 362 5906,,,8449 Main St,,Houston,TX,26237,JP,"8449 Main St, Houston, TX 26237","July 18, 2020",2023/02/28,inactive,,,Net 30
+CL-0360,Elizabeth Miller,Elizabeth,Miller,,individual,elizabeth.miller@example.com,,+1-631-598-8250,(538) 477-7530,762 400 2880,7267 Second Ave,Suite 214,San Jose,CA,85890,Germany,,11/20/20,,suspended,Legacy client record,46069.68,30 days
+CL-0361,SystemCore Inc,,,SystemCore Inc,,,,703-405-3550,+1-367-241-5815,,3037 Main Blvd,,Detroit,MI,89336,BR,"3037 Main Blvd, Detroit, MI 89336",17 June 2019,05/31/23,suspended,,18908.28,Net 30
+CL-0362,Ryan Phillips,Ryan,Phillips,,person,ryan.phillips@example.com,,(943) 676-3266,1-352-540-8767,,7331 Oak Ave,,Columbus,OH,74168,AU,,17/09/23,,ACTIVE,,,15 days
+CL-0363,TechBase,,,TechBase,corporation,legal@techbase.com,,763-391-9060,+1-700-855-8611,,1946 Lincoln St,Suite 258,Nashville,TN,66564,France,"1946 Lincoln St, Nashville, TN 66564",12/11/2019,30/01/2024,Active,,28370.93,
+CL-0364,Ryan Lee,Ryan,Lee,,individual,ryan.lee@example.com,,(881) 662-7202,,,2182 Oak Blvd,,Austin,TX,16337,FR,,03-25-2023,2023-09-20,inactive,,36068.58,15 days
+CL-0365,"Rivera, Kenneth",Kenneth,Rivera,,,kenneth.rivera@example.com,,+1-781-700-3535,,,1489 Lincoln Way,,San Jose,CA,52785,BR,"1489 Lincoln Way, San Jose, CA 52785",02/21/22,03-15-2023,ACTIVE,,,
+CL-0366,InnovaTech,,,InnovaTech,,legal@innovatech.com,,+1 607 729 6781,+1 754 287 5254,,2500 Lincoln Ave,Suite 659,Milwaukee,WI,67992,Canada,"2500 Lincoln Ave, Milwaukee, WI 67992",01/12/21,,suspended,Legacy client record,41405.49,15 days
+CL-0367,"Williams, Kenneth",Kenneth,Williams,,person,kenneth.williams_at_example.com,,+1-825-528-7364,+1-658-509-5082,,401 Main Dr,,Dallas,TX,26119,Canada,,08-06-2021,"June 10, 2023",active,,19922.87,COD
+CL-0368,Steven Morales,Steven,Morales,,person,,,+1 866 530 3090,,,3289 Lincoln Dr,,Chicago,IL,75136,United Kingdom,"3289 Lincoln Dr, Chicago, IL 75136",29/12/2020,11/09/2024,,,,Net 30
+CL-0369,"King, Ronald",Ronald,King,,individual,ronald.king@example.com,,+1-481-588-9581,434.271.5656,,3516 Main Way,,Jacksonville,FL,88781,India,,2019-02-24,,inactive,,,
+CL-0370,"Lee, Joseph",Joseph,Lee,,individual,joseph.lee@example.com,,732 328 9254,,,228 Park Way,,Portland,OR,60262,United States,"228 Park Way, Portland, OR 60262","June 05, 2023",,active,,12622.08,15 days
+CL-0371,Materials Inc Inc,,,Materials Inc Inc,,legal@materialsincinc.com,,+1-858-553-1113,345-988-2226,,4394 Oak St,,Albuquerque,NM,23421,JP,,11-28-2022,,,,14868.64,15 days
+CL-0372,"Baker, Timothy",Timothy,Baker,,individual,timothy.baker@example.com,,962 705 2976,1-786-800-7674,,853 Main St,,Washington,DC,79885,Germany,"853 Main St, Washington, DC 79885",09/10/23,,Active,,,
+CL-0373,Engineering Solutions LLC,,,Engineering Solutions LLC,,legal@engineeringsolutionsllc.com,,538.582.8949,+1-464-536-7223,,3275 Oak Blvd,,Seattle,WA,83456,Germany,,20 January 2019,,ACTIVE,,43647.32,
+CL-0374,DataGrid,,,DataGrid,,legal@datagrid.com,,+1 310 889 3948,(522) 806-7287,,8778 Lincoln Blvd,,San Antonio,TX,11431,DE,,2018/09/17,30 November 2023,ACTIVE,,,
+CL-0375,"Wilson, Charles",Charles,Wilson,,,charles.wilson@example.com,,+1-231-921-7763,,,5797 First Way,,Washington,DC,59835,CA,,13/08/2020,2024/08/27,suspended,Legacy client record,46590.01,15 days
+CL-0376,"Martinez, Timothy",Timothy,Martinez,,person,timothy.martinez@example.com,,(909) 337-6403,,,3221 Lincoln Ave,,Detroit,MI,83254,JP,,04-17-2018,Unknown,ACTIVE,,,
+CL-0377,TechGrid Ltd,,,TechGrid Ltd,corporation,legal@techgridltd.com,,1-507-489-6443,686-732-2909,,9587 First Dr,,Chicago,IL,82764,CA,"9587 First Dr, Chicago, IL 82764",02 March 2021,18/05/2023,active,,,
+CL-0378,"Evans, Susan",Susan,Evans,,individual,susan.evans@example.com,,(917) 439-5162,801 994 5256,,9508 Main Ave,,Indianapolis,IN,26260,Japan,"9508 Main Ave, Indianapolis, IN 26260","August 26, 2021",,ACTIVE,,37845.8,15 days
+CL-0379,"Mitchell, Daniel",Daniel,Mitchell,,,daniel.mitchell@example.com,,355-513-1888,303 729 1404,,1950 Washington Ave,,Detroit,MI,49934,BR,,10/04/2020,,inactive,,25476.32,30 days
+CL-0380,"Wilson, Lisa",Lisa,Wilson,,,lisa.wilson@example.com,,500.554.4520,1-865-361-8013,,6661 Park Dr,,Charlotte,NC,93173,DE,,1900-01-01,08/13/23,inactive,Legacy client record,,
+CL-0381,"Jones, Sarah",Sarah,Jones,,,,,+1 819 836 5775,,,5318 Main Way,Suite 827,San Diego,CA,59116,United States,,07/03/19,2023-08-17,,Legacy client record,40731.8,COD
+CL-0382,"Smith, Betty",Betty,Smith,,person,,,279.679.8194,+1 219 353 6938,,4375 Second Blvd,,Chicago,IL,17961,Japan,,03-17-2019,05/04/2024,ACTIVE,,38600.27,Net 30
+CL-0383,"Clark, Kenneth",Kenneth,Clark,,person,kenneth.clark@example.com,,239-861-1547,,,7616 Lincoln Ave,,Dallas,TX,21734,China,,"December 21, 2019","November 10, 2023",,Legacy client record,38593.21,30 days
+CL-0384,"Robinson, Mary",Mary,Robinson,,,,,(373) 959-5407,,,1951 Main Way,Suite 456,Oklahoma City,OK,20131,United States,,30/05/2018,2024-03-05,suspended,,11121.81,Net 30
+CL-0385,CyberTech Corp,,,CyberTech Corp,corporation,legal@cybertechcorp.com,,1-540-733-3057,+1 303 700 1224,,3198 Washington Blvd,,Houston,TX,61529,GB,"3198 Washington Blvd, Houston, TX 61529",2019/10/06,,active,Legacy client record,48611.2,15 days
+CL-0386,Kevin Wilson,Kevin,Wilson,,person,,,+1-231-541-1654,+1-878-485-5139,,5248 Lincoln Dr,,Memphis,TN,27343,DE,"5248 Lincoln Dr, Memphis, TN 27343",24/02/2021,,ACTIVE,Legacy client record,41871.46,Net 30
+CL-0387,"Johnson, Karen",Karen,Johnson,,person,,,269 260 5619,1-270-305-4427,,1743 Park Dr,,Fort Worth,TX,20982,UK,,2023/09/11,26/01/2023,inactive,,13027.61,30 days
+CL-0388,"Miller, William",William,Miller,,,,,1-216-777-1659,+1-238-525-9819,,6384 Oak St,,Austin,TX,57180,Australia,"6384 Oak St, Austin, TX 57180",03/15/2018,,ACTIVE,,33381.63,COD
+CL-0389,"Thomas, Elizabeth",Elizabeth,Thomas,,individual,elizabeth.thomas@example.com,,505-430-5367,535-258-8212,,4400 Oak St,Suite 138,Columbus,OH,37836,DE,"4400 Oak St, Columbus, OH 37836",07/04/2022,10/11/24,ACTIVE,,23913.82,COD
+CL-0390,"Parker, Linda",Linda,Parker,,person,,,1-986-984-1462,+1 589 534 5589,,1964 Main Dr,Suite 703,Chicago,IL,61517,FR,"1964 Main Dr, Chicago, IL 61517",03 January 2020,,Active,Legacy client record,22606.03,
+CL-0391,Construction Tech,,,Construction Tech,company,,,+1-896-566-7862,572-950-6840,,1798 Main Blvd,,New York,NY,42190,India,,12/11/21,27-05-2024,ACTIVE,,32184.12,
+CL-0392,Energy Solutions Inc,,,Energy Solutions Inc,corporation,legal@energysolutionsinc.com,,+1-665-909-9726,,240-642-6082,349 Oak Way,Suite 402,New York,NY,44645,AU,,2021/01/29,"March 18, 2024",active,,,15 days
+CL-0393,"Baker, Timothy",Timothy,Baker,,person,timothy.baker@example.com,,252-239-5862,+1 619 731 9150,,6652 Second Way,,Memphis,TN,70052,Brazil,"6652 Second Way, Memphis, TN 70052",18/10/2023,2024/09/04,Active,Legacy client record,21095.5,
+CL-0394,"Robinson, Betty",Betty,Robinson,,,betty.robinson@example.com,,1-758-347-3130,,+1-468-852-5233,719 Park St,Suite 865,Boston,MA,95168,JP,,"June 30, 2022",14 March 2023,,,31606.88,
+CL-0395,"Stewart, Andrew",Andrew,Stewart,,individual,andrew.stewart@example.com,,634 737 9857,,404 728 2315,4468 First Way,,San Diego,CA,19146,France,"4468 First Way, San Diego, CA 19146",21-11-2018,2024-02-16,ACTIVE,,22584.7,15 days
+CL-0396,TechPro,,,TechPro,company,legal@techpro.com,,1-561-313-6283,517-376-9295,,2537 Washington Blvd,Suite 291,Seattle,WA,81338,Canada,"2537 Washington Blvd, Seattle, WA 81338",04/11/2023,,Active,,39422.56,
+CL-0397,"Campbell, Nancy",Nancy,Campbell,,individual,,,+1 561 783 9088,,+1-980-422-1181,9858 Lincoln St,,Albuquerque,NM,83957,Deutschland,"9858 Lincoln St, Albuquerque, NM 83957",2023/07/05,,inactive,Legacy client record,21741.29,
+CL-0398,"Martin, Charles",Charles,Martin,,person,charles.martin@example.com,,202 830 6825,,(501) 781-3092,7264 Main Dr,,Memphis,TN,61214,China,,04 May 2021,00/00/0000,,,,COD
+CL-0399,HealthTech Ltd,,,HealthTech Ltd,,legal@healthtechltd.com,,288.537.5059,+1 414 551 3879,,6038 Park Blvd,,Albuquerque,NM,22893,IN,,02-03-2019,,,,,COD
+CL-0400,"Lewis, Mark",Mark,Lewis,,person,mark.lewis_at_example.com,,773.543.3447,832 316 2393,,2423 First St,,Baltimore,MD,37683,Australia,,11/22/22,,,Legacy client record,,30 days
+CL-0401,"Perez, Deborah",Deborah,Perez,,person,,,(328) 817-9672,+1 543 677 4247,,5893 Oak Ave,,Fort Worth,TX,74101,USA,,11/07/2019,,inactive,,38034.25,
+CL-0402,InnovateX,,,InnovateX,company,legal@innovatex.com,,N/A,864-449-7748,(349) 880-4983,6829 Second Blvd,,Chicago,IL,39122,FR,"6829 Second Blvd, Chicago, IL 39122",11-25-2020,06/08/2023,Active,Legacy client record,35517.79,30 days
+CL-0403,"Gomez, Timothy",Timothy,Gomez,,,timothy.gomez@example.com,,509-371-5202,(412) 603-5799,,4048 Park Blvd,,Philadelphia,PA,69768,Deutschland,"4048 Park Blvd, Philadelphia, PA 69768",05-24-2021,,inactive,,41039.46,15 days
+CL-0404,"Murphy, David",David,Murphy,,individual,david.murphy@example.com,,(253) 393-2256,,,8563 Park Way,Suite 590,Denver,CO,91134,Germany,,"July 25, 2021",,inactive,Legacy client record,17230.48,Net 30
+CL-0405,"Lopez, Ronald",Ronald,Lopez,,person,ronald.lopez@example.com,,900.220.9714,,,2587 Lincoln Dr,,Dallas,TX,18756,United Kingdom,"2587 Lincoln Dr, Dallas, TX 18756",10-14-2022,03/04/23,ACTIVE,Legacy client record,3234.98,COD
+CL-0406,"Roberts, Robert",Robert,Roberts,,person,robert.roberts@example.com,,987-434-2151,,+1-782-888-5879,2018 Washington Way,,Oklahoma City,OK,87290,JP,,2021-11-08,2024-06-15,Active,,,
+CL-0407,Industrial Systems,,,Industrial Systems,,legal@industrialsystems.com,,306 596 9101,,+1 766 370 9917,4817 Park Ave,Suite 220,Boston,MA,51066,India,"4817 Park Ave, Boston, MA 51066",12-07-2023,10/06/24,,Legacy client record,,
+CL-0408,Daniel Phillips,Daniel,Phillips,,,daniel.phillips@example.com,,+1 422 886 5640,(304) 985-7358,,6693 Second St,,Austin,TX,69007,Canada,,08/10/2018,01/11/24,active,,40535.16,30 days
+CL-0409,"Miller, Brian",Brian,Miller,,individual,brian.miller@example.com,,+1 526 532 7236,+1-655-913-3571,735-854-3346,254 Washington Ave,,Boston,MA,85493,France,,04/06/20,,active,,49531.38,COD
+CL-0410,"Miller, Thomas",Thomas,Miller,,individual,thomas.miller@example.com,,393.219.5189,,,4229 Washington Way,,Dallas,TX,31417,UK,,24/01/21,,ACTIVE,,20372.02,30 days
+CL-0411,InfoSys Corp,,,InfoSys Corp,corporation,legal@infosyscorp.com,,1-796-901-7506,,,6855 Oak Way,,Nashville,TN,41407,DE,,2021/06/04,,ACTIVE,,49040.98,
+CL-0412,"Moore, Helen",Helen,Moore,,individual,helen.moore@example.com,,+1 757 400 6365,+1 737 698 2974,,9569 Oak Ave,,Philadelphia,PA,71552,United Kingdom,,06/26/20,,suspended,Legacy client record,18591.36,15 days
+CL-0413,Kenneth Nguyen,Kenneth,Nguyen,,person,kenneth.nguyen@example.com,,1-346-787-7804,352-537-4884,,8412 Oak Blvd,,New York,NY,52841,CN,,29-03-2021,2024-07-18,ACTIVE,,,15 days
+CL-0414,"Garcia, Kevin",Kevin,Garcia,,individual,kevin.garcia@example.com,,549-793-5428,,,7523 Park St,,Fort Worth,TX,39675,AU,"7523 Park St, Fort Worth, TX 39675",25/12/2019,05-28-2023,inactive,,24329.13,30 days
+CL-0415,"Baker, Barbara",Barbara,Baker,,individual,barbara.baker@example.com,,+1 427 487 5424,557.318.9350,,4290 Second Ave,Suite 227,Washington,DC,22421,China,,2023-10-24,19/01/2023,,,28452.47,15 days
+CL-0416,"Diaz, Andrew",Andrew,Diaz,,person,andrew.diaz@example.com,,+1-315-451-2994,(542) 948-4477,,3616 Second Ave,,El Paso,TX,56273,CA,"3616 Second Ave, El Paso, TX 56273",26/11/18,"October 04, 2024",ACTIVE,,1310.94,Net 30
+CL-0417,Laura Wright,Laura,Wright,,individual,laura.wright@example.com,,981 430 1807,945 909 2188,,9584 Lincoln St,Suite 822,Philadelphia,PA,27396,Japan,,01/01/2022,2023/09/26,Active,,35033.91,
+CL-0418,Jessica Mitchell,Jessica,Mitchell,,person,jessica.mitchell@example.com,,+1 593 595 9729,,739.265.2610,7456 Park Blvd,,San Antonio,TX,65157,France,,07/18/18,,inactive,,1947.49,
+CL-0419,Kenneth Diaz,Kenneth,Diaz,,,kenneth.diaz@example.com,,(735) 788-7825,+1-943-603-8879,,4894 Main Dr,Suite 479,Portland,OR,22953,Australia,,2022-10-07,,active,,47053.85,COD
+CL-0420,Daniel Nguyen,Daniel,Nguyen,,individual,daniel.nguyen@example.com,,1-881-608-2782,(292) 333-8845,819-966-7574,7326 Park Ave,,Denver,CO,21299,USA,,12/03/21,,ACTIVE,,5972.72,15 days
+CL-0421,"Phillips, Susan",Susan,Phillips,,person,susan.phillips_at_example.com,,1-860-416-3835,,,5243 First St,,Oklahoma City,OK,50903,USA,,07-02-2021,19/06/24,active,,12056.03,COD
+CL-0422,Engineering Solutions,,,Engineering Solutions,,legal@engineeringsolutions.com,,299-237-8870,,824-484-8493,5503 Oak Ave,,San Francisco,CA,20639,Australia,,23 January 2023,,ACTIVE,,25913.28,COD
+CL-0423,"Brown, Jacob",Jacob,Brown,,individual,jacob.brown@example.com,,675.836.9933,+1-236-717-2802,,4649 Main Way,Suite 256,Austin,TX,39364,GB,"4649 Main Way, Austin, TX 39364",00/00/0000,10-11-2024,inactive,,,COD
+CL-0424,"Brown, Karen",Karen,Brown,,person,karen.brown@example.com,,+1 220 688 1388,,,3701 Washington Dr,,New York,NY,88406,IN,"3701 Washington Dr, New York, NY 88406",2023/02/22,29 September 2023,active,,,
+CL-0425,"Perez, Nancy",Nancy,Perez,,,,,417 858 6087,1-609-616-2570,+1-494-533-9403,6571 Oak Way,,Dallas,TX,66361,United Kingdom,,15-06-2019,07/06/23,active,,,15 days
+CL-0426,"Jackson, Gary",Gary,Jackson,,individual,gary.jackson@example.com,,+1 329 280 9445,1-227-884-4126,,1310 Main Dr,,Los Angeles,CA,58621,Brazil,,10 March 2023,15/07/24,Active,,35828.47,
+CL-0427,"Murphy, Anthony",Anthony,Murphy,,,anthony.murphy@example.com,,1-414-603-5431,+1 685 274 6509,,6215 Main Blvd,Suite 291,Austin,TX,75385,United Kingdom,,04/07/2018,11/24/2024,inactive,,41751.08,
+CL-0428,"Flores, Lisa",Lisa,Flores,,person,lisa.flores@example.com,,(962) 337-1095,,+1 994 265 8025,3148 Park Way,,Memphis,TN,70451,CA,,09/16/22,,inactive,,,30 days
+CL-0429,TechVision Inc,,,TechVision Inc,corporation,legal@techvisioninc.com,,894.425.1381,842-776-3539,,7471 Second Dr,,Los Angeles,CA,88299,BR,"7471 Second Dr, Los Angeles, CA 88299",2021-06-10,31/08/2023,Active,,41450.15,COD
+CL-0430,"Turner, Jacob",Jacob,Turner,,person,jacob.turner@example.com,,238-451-1640,356.648.1696,,3345 Second St,,Charlotte,NC,52675,FR,"3345 Second St, Charlotte, NC 52675",09-13-2022,06/05/23,active,,47835.52,15 days
+CL-0431,TechWorld,,,TechWorld,corporation,legal@techworld.com,,(669) 731-8210,481 486 1523,,930 Washington St,,Columbus,OH,38609,CN,,"July 08, 2018",,inactive,Legacy client record,47718.26,15 days
+CL-0432,"Nelson, Michelle",Michelle,Nelson,,,michelle.nelson@example.com,,+1-837-792-4280,,,5825 Second Blvd,,Detroit,MI,96836,BR,,"January 27, 2023","January 14, 2023",ACTIVE,,10798.95,Net 30
+CL-0433,"Johnson, Helen",Helen,Johnson,,person,helen.johnson@example.com,,639.803.1276,,,3465 Second Way,Suite 780,Austin,TX,74259,Brazil,"3465 Second Way, Austin, TX 74259",07 April 2018,06/27/23,ACTIVE,,25439.12,COD
+CL-0434,"Phillips, Helen",Helen,Phillips,,person,,,(555) 421-3119,919 555 9020,,8952 Park Way,Suite 234,San Jose,CA,16011,Brazil,"8952 Park Way, San Jose, CA 16011",07 September 2019,,,,43593.37,COD
+CL-0435,InnovaTech,,,InnovaTech,,legal@innovatech.com,,+1 349 577 1339,486.804.1435,,5621 Lincoln Dr,,Philadelphia,PA,87836,Canada,,26/09/2022,,,,2578.75,
+CL-0436,"Clark, Helen",Helen,Clark,,person,helen.clark@example.com,,(794) 447-4230,,,8946 Lincoln Dr,,Los Angeles,CA,61493,IN,"8946 Lincoln Dr, Los Angeles, CA 61493",2020-12-03,06/05/24,ACTIVE,Legacy client record,14726.74,Net 30
+CL-0437,Jennifer Harris,Jennifer,Harris,,person,jennifer.harris@example.com,,+1-853-516-1187,+1 355 358 4420,,8490 Washington Ave,,Jacksonville,FL,78550,DE,,2020/03/19,11/22/2023,active,,48496.95,COD
+CL-0438,TechGrid Ltd,,,TechGrid Ltd,corporation,legal@techgridltd.com,,+1-564-462-1722,,,5025 Second St,,Los Angeles,CA,33285,Australia,"5025 Second St, Los Angeles, CA 33285",30-05-2023,,ACTIVE,,35221.05,Net 30
+CL-0439,"Sanchez, Jacob",Jacob,Sanchez,,individual,jacob.sanchez@example.com,,(653) 957-2696,(559) 269-8424,1-388-381-3951,2046 Lincoln St,,San Jose,CA,26007,CN,"2046 Lincoln St, San Jose, CA 26007",30/11/19,04/20/24,suspended,,1027.66,Net 30
+CL-0440,"Smith, Karen",Karen,Smith,,individual,karen.smith@example.com,,901 399 1681,,,7962 Oak Way,Suite 260,Phoenix,AZ,89015,BR,"7962 Oak Way, Phoenix, AZ 89015",10/21/2023,,ACTIVE,Legacy client record,35106.45,COD
+CL-0441,"Thomas, Matthew",Matthew,Thomas,,person,matthew.thomas@example.com,,(556) 693-7121,,,6281 Second Blvd,,Denver,CO,53619,BR,,08/18/19,10/02/2023,suspended,,,Net 30
+CL-0442,"Nelson, Betty",Betty,Nelson,,person,,,+1-479-244-1459,,,2968 Oak Way,,Jacksonville,FL,57848,Japan,,2019/01/25,16/08/24,ACTIVE,,28684.34,15 days
+CL-0443,Michael Roberts,Michael,Roberts,,individual,michael.roberts@example.com,,1-712-437-5929,,,8222 Second Blvd,,San Francisco,CA,66896,GB,"8222 Second Blvd, San Francisco, CA 66896",22/03/23,,suspended,,16539.65,
+CL-0444,TechGrid LLC,,,TechGrid LLC,corporation,legal@techgridllc.com,,327.815.6730,535.455.1445,,9915 First Blvd,,Washington,DC,91470,GB,,03/02/19,,Active,,,
+CL-0445,"Roberts, Lisa",Lisa,Roberts,,,lisa.roberts@example.com,,+1-518-335-8199,,,1364 Washington Ave,,Milwaukee,WI,47752,Deutschland,,2021-11-09,,,Legacy client record,38017.71,Net 30
+CL-0446,Energy Solutions Inc,,,Energy Solutions Inc,company,,,328-682-7660,,,7946 Second Dr,,Los Angeles,CA,78756,Australia,,TBD,"May 20, 2024",active,,43563.78,COD
+CL-0447,SystemsPlus Corp,,,SystemsPlus Corp,company,legal@systemspluscorp.com,,+1-708-504-2602,+1 643 890 8970,,3186 Second Blvd,,Indianapolis,IN,82053,France,"3186 Second Blvd, Indianapolis, IN 82053",26 March 2022,"July 15, 2023",active,,34290.37,
+CL-0448,TechPro,,,TechPro,,legal@techpro.com,,784 832 4923,1-852-594-4447,,6232 Second Dr,Suite 909,New York,NY,16647,CA,,02/04/2018,30/01/2024,ACTIVE,Legacy client record,,Net 30
+CL-0449,CyberSoft,,,CyberSoft,company,legal@cybersoft.com,,277 977 5072,333.271.1646,+1 507 919 4012,5417 Second St,,Boston,MA,84124,Japan,,04/07/2019,08-08-2024,active,,29101.24,COD
+CL-0450,"Rodriguez, John",John,Rodriguez,,,,,1-821-753-9374,,,3145 Lincoln Way,,Oklahoma City,OK,78183,China,"3145 Lincoln Way, Oklahoma City, OK 78183",21-12-2019,26/09/2023,Active,,41636.7,
+CL-0451,DataCore Inc,,,DataCore Inc,,legal@datacoreinc.com,,518.961.3923,+1 751 865 6650,,3595 First Dr,Suite 608,Philadelphia,PA,81552,Japan,"3595 First Dr, Philadelphia, PA 81552",02-25-2023,2023-11-17,,,17715.85,30 days
+CL-0452,Daniel Lopez,Daniel,Lopez,,person,daniel.lopez@example.com,,+1-885-385-7657,419.903.4966,+1 427 327 2618,8546 Main Dr,,Austin,TX,37388,China,,2020-09-24,,suspended,,,COD
+CL-0453,"Rodriguez, Kevin",Kevin,Rodriguez,,individual,kevin.rodriguez@example.com,,(814) 433-6436,606-650-7131,,6012 First St,Suite 484,Washington,DC,80646,CA,"6012 First St, Washington, DC 80646","November 14, 2020",03-15-2024,,,43306.8,15 days
+CL-0454,"Nelson, Jeffrey",Jeffrey,Nelson,,individual,jeffrey.nelson@example.com,,1-720-361-6898,,550-710-1363,9533 First Dr,,Baltimore,MD,16023,IN,,"September 16, 2020",,Active,,46471.55,
+CL-0455,"Carter, John",John,Carter,,person,,,568 633 9458,+1 367 363 5992,,8653 Washington Way,Suite 760,Boston,MA,85407,US,,07/08/2020,,,Legacy client record,,
+CL-0456,SystemCore,,,SystemCore,,legal@systemcore.com,,917 880 7498,,,9064 Washington Ave,,Seattle,WA,34004,JP,"9064 Washington Ave, Seattle, WA 34004",2021-12-03,11/17/24,Active,,,COD
+CL-0457,"Thompson, Thomas",Thomas,Thompson,,person,,,1-228-802-7302,(843) 952-3713,,3479 Park Way,,Fort Worth,TX,52387,USA,,"April 24, 2019",,active,,,Net 30
+CL-0458,SmartSystems Corp,,,SmartSystems Corp,,legal@smartsystemscorp.com,,640.595.9979,,,2126 Park Blvd,,Los Angeles,CA,24651,Deutschland,,27/08/21,,suspended,,,
+CL-0459,"Edwards, Daniel",Daniel,Edwards,,person,daniel.edwards@example.com,,902.569.9976,475-417-5844,,1128 First St,Suite 335,Albuquerque,NM,17862,FR,"1128 First St, Albuquerque, NM 17862","March 22, 2022",,inactive,Legacy client record,38797.48,30 days
+CL-0460,"Collins, Sharon",Sharon,Collins,,,,,732-423-7381,1-311-447-9728,,2043 Park St,Suite 835,Nashville,TN,66770,DE,"2043 Park St, Nashville, TN 66770",12/12/19,30-04-2023,inactive,,,15 days
+CL-0461,"Thomas, Robert",Robert,Thomas,,,,,803 827 6635,397.248.1944,,5492 Second Ave,Suite 888,Albuquerque,NM,29611,Deutschland,,07/18/21,,inactive,,1064.86,Net 30
+CL-0462,Karen Stewart,Karen,Stewart,,,karen.stewart@example.com,,499 589 6953,,,3323 Oak Ave,,Washington,DC,74142,Australia,,2022-05-08,,inactive,,44449.37,
+CL-0463,"Hernandez, Linda",Linda,Hernandez,,person,linda.hernandez@example.com,,1-338-695-3889,1-536-659-8188,,6030 Second Way,,San Jose,CA,15660,US,"6030 Second Way, San Jose, CA 15660",02/24/22,,ACTIVE,,32749.18,
+CL-0464,Donna Williams,Donna,Williams,,individual,donna.williams@example.com,,+1 530 440 4044,,,6219 Main Way,,Charlotte,NC,66815,France,,04 September 2023,,active,,33675.26,
+CL-0465,Patricia Murphy,Patricia,Murphy,,person,patricia.murphy@example.com,,(277) 837-4159,1-558-734-7575,,2504 Lincoln Way,Suite 403,San Jose,CA,96580,DE,,06/19/2022,,active,,36170.92,
+CL-0466,"Harris, Ruth",Ruth,Harris,,person,ruth.harris@example.com,,320 997 1689,1-991-600-1863,,4150 First St,,Los Angeles,CA,77718,China,"4150 First St, Los Angeles, CA 77718",13/02/2018,,ACTIVE,,43046.48,
+CL-0467,Construction Tech,,,Construction Tech,company,legal@constructiontech.com,,627 817 2994,1-686-954-5623,,6540 Lincoln Blvd,Suite 678,Milwaukee,WI,85772,BR,,2019/04/21,2024/02/27,active,Legacy client record,43448.83,
+CL-0468,HealthTech Inc,,,HealthTech Inc,corporation,legal@healthtechinc.com,,1-347-773-8045,+1-890-398-5050,,3121 Lincoln Way,Suite 235,El Paso,TX,24454,JP,,05/14/18,"July 31, 2023",,Legacy client record,9275.43,
+CL-0469,Richard Harris,Richard,Harris,,,richard.harris@example.com,,600-272-4663,+1-739-332-4743,+1 306 656 9631,2720 Main St,,Phoenix,AZ,50418,USA,"2720 Main St, Phoenix, AZ 50418",13/11/22,24/12/23,suspended,,,Net 30
+CL-0470,"Adams, Joseph",Joseph,Adams,,person,joseph.adams@example.com,,(288) 884-7818,,,324 Lincoln Blvd,Suite 540,Memphis,TN,21670,BR,"324 Lincoln Blvd, Memphis, TN 21670",05 October 2020,,ACTIVE,,4477.65,COD
+CL-0471,"Adams, Nancy",Nancy,Adams,,person,nancy.adams@example.com,,+1 857 283 6324,+1 513 266 9448,,6761 First Dr,,Phoenix,AZ,29261,Australia,,00/00/0000,2024-07-11,inactive,,32454.36,
+CL-0472,"Clark, Karen",Karen,Clark,,individual,karen.clark@example.com,,+1 850 769 9098,+1 864 764 8899,+1-634-508-2692,4155 Main Ave,Suite 463,Charlotte,NC,88281,US,,04/25/22,11/07/23,active,Legacy client record,13046.86,30 days
+CL-0473,"Sanchez, Sarah",Sarah,Sanchez,,person,sarah.sanchez@example.com,,768 747 5410,281 791 1393,,2478 Oak Ave,,Charlotte,NC,28349,Brazil,,21-01-2018,2023-10-24,,Legacy client record,,COD
+CL-0474,"Jones, Donald",Donald,Jones,,,donald.jones@example.com,,569 700 4981,,528 699 1793,10 Main Way,,Los Angeles,CA,68181,United States,,01/22/2023,30/07/23,Active,,11445.83,
+CL-0475,"Phillips, Betty",Betty,Phillips,,person,betty.phillips@example.com,,(620) 999-9628,639 964 5047,,2816 Main Blvd,Suite 457,Denver,CO,77036,UK,"2816 Main Blvd, Denver, CO 77036",01-03-2019,15 August 2024,active,Legacy client record,3671.54,15 days
+CL-0476,Automotive Parts Inc Ltd,,,Automotive Parts Inc Ltd,,legal@automotivepartsincltd.com,,+1 777 770 5098,,,519 Main St,Suite 297,New York,NY,40487,United States,,09/09/2020,10/12/23,inactive,,20719.37,15 days
+CL-0477,George Taylor,George,Taylor,,,george.taylor@example.com,,934 203 3961,845.675.5830,,7938 Washington Ave,,Philadelphia,PA,87172,Japan,,06/18/2020,07/22/24,active,Legacy client record,37254.55,30 days
+CL-0478,DataGrid Corp,,,DataGrid Corp,company,legal@datagridcorp.com,,(252) 849-4094,,,7363 Main Blvd,Suite 322,Denver,CO,20803,Australia,"7363 Main Blvd, Denver, CO 20803",02/02/23,06-22-2024,Active,Legacy client record,,
+CL-0479,"Robinson, Michael",Michael,Robinson,,individual,michael.robinson@example.com,,811-516-3402,Unknown,1-923-303-6973,3081 Park Dr,Suite 112,Albuquerque,NM,46070,DE,,2023-12-12,10-13-2024,Active,,49601.31,30 days
+CL-0480,"Perez, Sharon",Sharon,Perez,,,sharon.perez@example.com,,1-928-375-6276,,,6308 Main Dr,Suite 236,Las Vegas,NV,82578,AU,,2022/03/06,,,,16483.92,30 days
+CL-0481,"Clark, Ronald",Ronald,Clark,,individual,ronald.clark@example.com,,(969) 794-3480,,,4426 First Way,Suite 698,Washington,DC,76022,France,,04/17/2023,04 November 2023,,Legacy client record,4140.32,Net 30
+CL-0482,Donna Ramirez,Donna,Ramirez,,,donna.ramirez@example.com,,655 609 5645,,,78 Washington Way,Suite 123,Las Vegas,NV,70524,US,,,21-05-2024,Active,,,
+CL-0483,TechLink Inc,,,TechLink Inc,company,legal@techlinkinc.com,,+1-391-814-1711,,,6239 Lincoln St,,Denver,CO,46542,FR,"6239 Lincoln St, Denver, CO 46542",19-02-2023,10-16-2023,inactive,Legacy client record,39841.22,30 days
+CL-0484,"Torres, Jacob",Jacob,Torres,,,jacob.torres@example.com,,1-507-904-3922,857-536-2409,,1966 Park Dr,,Louisville,KY,47376,Deutschland,,26/04/2019,15/01/2023,Active,Legacy client record,26546.26,
+CL-0485,SmartSystems Ltd,,,SmartSystems Ltd,company,legal_at_smartsystemsltd.com,,(505) 319-6196,+1 564 279 9426,,9150 First St,,Philadelphia,PA,80798,FR,,03/05/20,00/00/0000,active,Legacy client record,31249.06,
+CL-0486,"Cruz, Sharon",Sharon,Cruz,,person,sharon.cruz@example.com,,+1 273 708 1832,1-987-888-2156,,1320 Second Ave,,Houston,TX,25888,UK,,1900-01-01,2024/09/21,active,,16357.99,
+CL-0487,"Nelson, Karen",Karen,Nelson,,individual,karen.nelson@example.com,,409.635.5727,1-618-483-4482,,6303 Lincoln Ave,,Louisville,KY,10938,China,,"August 27, 2019",,inactive,,32634.09,
+CL-0488,"Carter, Barbara",Barbara,Carter,,,barbara.carter@example.com,,1-643-864-8286,,,2641 Washington Ave,,Denver,CO,60848,UK,,10/21/23,2024-01-22,ACTIVE,,,Net 30
+CL-0489,Paul Taylor,Paul,Taylor,,person,paul.taylor@example.com,,884-963-7403,,+1 579 277 7152,9828 Main Way,,Louisville,KY,98579,France,,2018/04/05,07-22-2024,active,,27590.33,
+CL-0490,"Thomas, James",James,Thomas,,individual,james.thomas@example.com,,351.978.8451,,462.702.5249,1609 Washington Blvd,,El Paso,TX,72665,GB,,2020/05/27,,active,Legacy client record,37642.86,
+CL-0491,"Flores, Nancy",Nancy,Flores,,person,nancy.flores@example.com,,+1-208-726-1578,,,3173 Second Ave,Suite 908,Nashville,TN,79464,Australia,,02/26/2018,2023-01-17,ACTIVE,,20759.97,30 days
+CL-0492,"Campbell, Barbara",Barbara,Campbell,,,barbara.campbell@example.com,,+1 299 336 6438,,,5029 Lincoln St,,Milwaukee,WI,42232,China,"5029 Lincoln St, Milwaukee, WI 42232",26/10/2020,26 June 2023,active,,,Net 30
+CL-0493,"Adams, Paul",Paul,Adams,,,paul.adams@example.com,,387.281.8113,(838) 612-7812,,9476 Park St,,Louisville,KY,27948,India,,2021-01-19,12-11-2024,active,Legacy client record,,
+CL-0494,"Torres, Ronald",Ronald,Torres,,person,ronald.torres@example.com,,+1-991-390-7560,227-352-2009,,4218 Park Ave,,San Antonio,TX,62929,CA,"4218 Park Ave, San Antonio, TX 62929",1900-01-01,18 May 2024,,Legacy client record,,30 days
+CL-0495,"Johnson, Andrew",Andrew,Johnson,,,,,(748) 367-3568,,,1337 Park Way,,San Jose,CA,47494,BR,"1337 Park Way, San Jose, CA 47494",26 December 2021,,,,,
+CL-0496,"Nguyen, Sarah",Sarah,Nguyen,,person,sarah.nguyen@example.com,,(334) 635-7985,,1-472-535-8947,1867 Park Blvd,,Charlotte,NC,55762,France,,09/18/23,"June 30, 2023",suspended,,46988.22,COD
+CL-0497,"Perez, Matthew",Matthew,Perez,,person,matthew.perez@example.com,,1-399-858-1366,,,9187 Main Blvd,Suite 546,New York,NY,58819,GB,"9187 Main Blvd, New York, NY 58819",N/A,,active,Legacy client record,,Net 30
+CL-0498,"Johnson, Ryan",Ryan,Johnson,,individual,ryan.johnson@example.com,,809 597 6052,1-595-810-3080,,5369 Park Ave,,Philadelphia,PA,87886,Australia,,2019/12/10,06/08/2024,,,41666.1,Net 30
+CL-0499,Barbara Martinez,Barbara,Martinez,,person,barbara.martinez@example.com,,838.422.2751,433.944.7926,212-921-5474,1802 Washington St,,Albuquerque,NM,15161,Canada,,2023-12-06,00/00/0000,ACTIVE,,41364.47,
+CL-0500,"Thomas, Nancy",Nancy,Thomas,,person,nancy.thomas@example.com,,238.999.3187,,,739 Oak Dr,Suite 727,Washington,DC,13191,CA,,"March 02, 2022",,active,,,Net 30

@@ -1,0 +1,276 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row mb-4">
+    <!-- Statistics Cards -->
+    <div class="col-md-3 mb-3">
+        <div class="card metric-card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h6 class="card-subtitle mb-2 text-muted">Total Clients</h6>
+                        <h3 class="card-title text-primary">{{ stats.clients }}</h3>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-users fa-2x text-primary"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-3 mb-3">
+        <div class="card metric-card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h6 class="card-subtitle mb-2 text-muted">Patents</h6>
+                        <h3 class="card-title text-success">{{ stats.patents }}</h3>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-lightbulb fa-2x text-success"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-3 mb-3">
+        <div class="card metric-card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h6 class="card-subtitle mb-2 text-muted">Trademarks</h6>
+                        <h3 class="card-title text-warning">{{ stats.trademarks }}</h3>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-trademark fa-2x text-warning"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-3 mb-3">
+        <div class="card metric-card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h6 class="card-subtitle mb-2 text-muted">Deadlines</h6>
+                        <h3 class="card-title text-danger">{{ stats.deadlines }}</h3>
+                    </div>
+                    <div class="align-self-center">
+                        <i class="fas fa-calendar-alt fa-2x text-danger"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Data Quality Overview -->
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="card-title mb-0"><i class="fas fa-check-circle me-2"></i>Data Quality Overview</h5>
+                <button class="btn btn-sm btn-outline-primary" onclick="runValidation()">
+                    <i class="fas fa-sync me-1"></i>Run Validation
+                </button>
+            </div>
+            <div class="card-body">
+                {% if validation %}
+                <div class="text-center mb-3">
+                    <div class="quality-score {% if validation.system_quality_score >= 90 %}quality-excellent{% elif validation.system_quality_score >= 70 %}quality-good{% else %}quality-poor{% endif %}">
+                        {{ validation.system_quality_score }}%
+                    </div>
+                    <small class="text-muted">Overall Quality Score</small>
+                </div>
+                
+                <div class="row">
+                    {% for entity, result in validation.results.items() %}
+                    <div class="col-6 mb-2">
+                        <div class="d-flex justify-content-between">
+                            <span class="text-capitalize">{{ entity }}:</span>
+                            <span class="badge {% if result.overall_score >= 90 %}bg-success{% elif result.overall_score >= 70 %}bg-warning{% else %}bg-danger{% endif %}">
+                                {{ result.overall_score }}%
+                            </span>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                
+                <div class="mt-3">
+                    <small class="text-muted">
+                        Last validated: {{ validation.validation_timestamp[:19] | replace('T', ' ') }}
+                    </small>
+                </div>
+                {% else %}
+                <div class="text-center py-4">
+                    <i class="fas fa-exclamation-triangle fa-3x text-warning mb-3"></i>
+                    <p class="text-muted">No validation data available</p>
+                    <button class="btn btn-primary" onclick="runValidation()">
+                        <i class="fas fa-play me-1"></i>Run First Validation
+                    </button>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    
+    <!-- System Status -->
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0"><i class="fas fa-server me-2"></i>System Status</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span><i class="fas fa-database me-2 text-success"></i>Legacy Data</span>
+                            <span class="badge bg-success">Active</span>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span><i class="fas fa-cogs me-2 text-primary"></i>ETL Pipeline</span>
+                            <span class="badge bg-primary">Ready</span>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span><i class="fas fa-shield-alt me-2 text-info"></i>Validation System</span>
+                            <span class="badge bg-info">Operational</span>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span><i class="fas fa-chart-line me-2 text-warning"></i>Reporting Engine</span>
+                            <span class="badge bg-warning">Active</span>
+                        </div>
+                    </div>
+                </div>
+                
+                {% if stats.last_updated %}
+                <div class="mt-3 pt-3 border-top">
+                    <small class="text-muted">
+                        <i class="fas fa-clock me-1"></i>
+                        Last data update: {{ stats.last_updated[:19] | replace('T', ' ') }}
+                    </small>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Quick Actions -->
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0"><i class="fas fa-bolt me-2"></i>Quick Actions</h5>
+            </div>
+            <div class="card-body">
+                <div class="d-grid gap-2">
+                    <button class="btn btn-outline-primary" onclick="generateMockData()">
+                        <i class="fas fa-database me-2"></i>Generate Mock Data
+                    </button>
+                    <button class="btn btn-outline-success" onclick="runValidation()">
+                        <i class="fas fa-check-circle me-2"></i>Run Data Validation
+                    </button>
+                    <a href="/migration" class="btn btn-outline-warning">
+                        <i class="fas fa-exchange-alt me-2"></i>Start Migration
+                    </a>
+                    <a href="/reports" class="btn btn-outline-info">
+                        <i class="fas fa-chart-bar me-2"></i>View Reports
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Recent Activity -->
+    <div class="col-md-8 mb-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0"><i class="fas fa-history me-2"></i>Recent Activity</h5>
+            </div>
+            <div class="card-body">
+                <div id="activity-log">
+                    <div class="d-flex align-items-center mb-2">
+                        <i class="fas fa-check-circle text-success me-2"></i>
+                        <span class="flex-grow-1">Mock data generated successfully</span>
+                        <small class="text-muted">Just now</small>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <i class="fas fa-exclamation-triangle text-warning me-2"></i>
+                        <span class="flex-grow-1">Data validation found quality issues</span>
+                        <small class="text-muted">2 minutes ago</small>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <i class="fas fa-info-circle text-info me-2"></i>
+                        <span class="flex-grow-1">System started successfully</span>
+                        <small class="text-muted">5 minutes ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+async function runValidation() {
+    showAlert('Starting data validation...', 'info');
+    
+    try {
+        const result = await apiCall('/api/validation/run', { method: 'POST' });
+        showAlert('Validation started successfully. Results will be available shortly.', 'success');
+        
+        // Refresh the page after a delay to show updated results
+        setTimeout(() => {
+            window.location.reload();
+        }, 3000);
+    } catch (error) {
+        showAlert('Failed to start validation', 'danger');
+    }
+}
+
+async function generateMockData() {
+    if (!confirm('This will generate new mock data, potentially overwriting existing data. Continue?')) {
+        return;
+    }
+    
+    showAlert('Generating mock data...', 'info');
+    
+    try {
+        const result = await apiCall('/api/data/generate', { method: 'POST' });
+        showAlert('Mock data generation started. This may take a few moments.', 'success');
+        
+        // Refresh the page after a delay to show updated statistics
+        setTimeout(() => {
+            window.location.reload();
+        }, 5000);
+    } catch (error) {
+        showAlert('Failed to generate mock data', 'danger');
+    }
+}
+
+// Auto-refresh statistics every 30 seconds
+setInterval(async () => {
+    try {
+        const stats = await apiCall('/api/stats');
+        // Update statistics display
+        document.querySelector('.text-primary').textContent = stats.clients;
+        document.querySelector('.text-success').textContent = stats.patents;
+        document.querySelector('.text-warning').textContent = stats.trademarks;
+        document.querySelector('.text-danger').textContent = stats.deadlines;
+    } catch (error) {
+        console.error('Failed to refresh statistics:', error);
+    }
+}, 30000);
+</script>
+{% endblock %}

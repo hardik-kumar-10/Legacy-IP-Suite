@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0"><i class="fas fa-calendar-alt me-2"></i>Upcoming Deadlines</h5>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover data-table">
+                        <thead>
+                            <tr>
+                                <th>Deadline ID</th>
+                                <th>Description</th>
+                                <th>Related Matter</th>
+                                <th>Due Date</th>
+                                <th>Priority</th>
+                                <th>Status</th>
+                                <th>Urgency</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for deadline in deadlines[:30] %}
+                            <tr>
+                                <td><span class="badge bg-light text-dark">{{ deadline.deadline_id }}</span></td>
+                                <td>{{ deadline.description }}</td>
+                                <td>{{ deadline.related_type }} {{ deadline.related_id }}</td>
+                                <td>{{ deadline.due_date }}</td>
+                                <td>{{ deadline.priority }}</td>
+                                <td>{{ deadline.status }}</td>
+                                <td>
+                                    {% if deadline.urgency == 'overdue' %}
+                                    <span class="badge urgency-overdue">Overdue</span>
+                                    {% elif deadline.urgency == 'critical' %}
+                                    <span class="badge urgency-critical">Critical</span>
+                                    {% elif deadline.urgency == 'high' %}
+                                    <span class="badge urgency-high">High</span>
+                                    {% elif deadline.urgency == 'medium' %}
+                                    <span class="badge urgency-medium">Medium</span>
+                                    {% else %}
+                                    <span class="badge urgency-low">Low</span>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                <div class="text-center mt-3">
+                    <small class="text-muted">Showing first 30 of {{ deadlines|length }} deadlines</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

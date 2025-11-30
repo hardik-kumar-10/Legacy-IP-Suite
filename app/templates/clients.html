@@ -1,0 +1,373 @@
+{% extends "base.html" %}
+
+{% block page_actions %}
+<div class="btn-group">
+    <button class="btn btn-primary" onclick="showAddClientModal()">
+        <i class="fas fa-plus me-1"></i>Add Client
+    </button>
+    <button class="btn btn-outline-secondary" onclick="exportClients()">
+        <i class="fas fa-download me-1"></i>Export
+    </button>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="card-title mb-0"><i class="fas fa-users me-2"></i>Client Directory</h5>
+                <div class="d-flex gap-2">
+                    <input type="text" class="form-control form-control-sm" id="searchInput" placeholder="Search clients..." style="width: 250px;">
+                    <select class="form-select form-select-sm" id="typeFilter" style="width: 150px;">
+                        <option value="">All Types</option>
+                        <option value="individual">Individual</option>
+                        <option value="company">Company</option>
+                        <option value="organization">Organization</option>
+                    </select>
+                </div>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover data-table mb-0" id="clientsTable">
+                        <thead>
+                            <tr>
+                                <th>Client ID</th>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Location</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for client in clients %}
+                            <tr>
+                                <td>
+                                    <span class="badge bg-light text-dark">{{ client.client_id }}</span>
+                                </td>
+                                <td>
+                                    <div>
+                                        <strong>{{ client.client_name or 'N/A' }}</strong>
+                                        {% if client.company_name and client.company_name != client.client_name %}
+                                        <br><small class="text-muted">{{ client.company_name }}</small>
+                                        {% endif %}
+                                    </div>
+                                </td>
+                                <td>
+                                    {% if client.client_type and client.client_type|string != 'nan' %}
+                                    <span class="badge bg-info">{{ client.client_type|string|title }}</span>
+                                    {% else %}
+                                    <span class="text-muted">Unknown</span>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    {% if client.email %}
+                                    <a href="mailto:{{ client.email }}">{{ client.email }}</a>
+                                    {% else %}
+                                    <span class="text-muted">No email</span>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    {% if client.phone %}
+                                    <a href="tel:{{ client.phone }}">{{ client.phone }}</a>
+                                    {% else %}
+                                    <span class="text-muted">No phone</span>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    <div>
+                                        {% if client.city %}{{ client.city }}{% endif %}
+                                        {% if client.state_province %}, {{ client.state_province }}{% endif %}
+                                        {% if client.country %}<br><small class="text-muted">{{ client.country }}</small>{% endif %}
+                                    </div>
+                                </td>
+                                <td>
+                                    {% if client.status and client.status.lower() == 'active' %}
+                                    <span class="badge bg-success">Active</span>
+                                    {% elif client.status and client.status.lower() == 'inactive' %}
+                                    <span class="badge bg-secondary">Inactive</span>
+                                    {% elif client.status and client.status.lower() == 'suspended' %}
+                                    <span class="badge bg-warning">Suspended</span>
+                                    {% else %}
+                                    <span class="badge bg-light text-dark">Unknown</span>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    <div class="btn-group btn-group-sm">
+                                        <button class="btn btn-outline-primary btn-sm" onclick="viewClient('{{ client.client_id }}')">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <button class="btn btn-outline-secondary btn-sm" onclick="editClient('{{ client.client_id }}')">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn btn-outline-info btn-sm" onclick="viewClientMatters('{{ client.client_id }}')">
+                                            <i class="fas fa-folder"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+                <small class="text-muted">Showing {{ clients|length }} clients</small>
+                <nav>
+                    <ul class="pagination pagination-sm mb-0">
+                        <li class="page-item disabled">
+                            <span class="page-link">Previous</span>
+                        </li>
+                        <li class="page-item active">
+                            <span class="page-link">1</span>
+                        </li>
+                        <li class="page-item disabled">
+                            <span class="page-link">Next</span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Client Statistics -->
+<div class="row">
+    <div class="col-md-4 mb-3">
+        <div class="card">
+            <div class="card-body text-center">
+                <h3 class="text-primary" id="totalClients">{{ clients|length }}</h3>
+                <p class="text-muted mb-0">Total Clients</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-3">
+        <div class="card">
+            <div class="card-body text-center">
+                <h3 class="text-success" id="activeClients">
+                    {{ clients|selectattr("status", "equalto", "active")|list|length + 
+                       clients|selectattr("status", "equalto", "Active")|list|length + 
+                       clients|selectattr("status", "equalto", "ACTIVE")|list|length }}
+                </h3>
+                <p class="text-muted mb-0">Active Clients</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-3">
+        <div class="card">
+            <div class="card-body text-center">
+                <h3 class="text-info" id="companyClients">
+                    {{ clients|selectattr("client_type", "equalto", "company")|list|length + 
+                       clients|selectattr("client_type", "equalto", "corporation")|list|length }}
+                </h3>
+                <p class="text-muted mb-0">Corporate Clients</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Client Modal -->
+<div class="modal fade" id="addClientModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add New Client</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="addClientForm">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Client Type</label>
+                            <select class="form-select" name="client_type" required>
+                                <option value="">Select Type</option>
+                                <option value="individual">Individual</option>
+                                <option value="company">Company</option>
+                                <option value="organization">Organization</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Status</label>
+                            <select class="form-select" name="status">
+                                <option value="active">Active</option>
+                                <option value="inactive">Inactive</option>
+                                <option value="suspended">Suspended</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">First Name</label>
+                            <input type="text" class="form-control" name="first_name">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Last Name</label>
+                            <input type="text" class="form-control" name="last_name">
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Company Name</label>
+                        <input type="text" class="form-control" name="company_name">
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" name="email">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Phone</label>
+                            <input type="tel" class="form-control" name="phone">
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Address</label>
+                        <input type="text" class="form-control" name="address_line1" placeholder="Street Address">
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label class="form-label">City</label>
+                            <input type="text" class="form-control" name="city">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label class="form-label">State/Province</label>
+                            <input type="text" class="form-control" name="state_province">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label class="form-label">Country</label>
+                            <input type="text" class="form-control" name="country">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" onclick="saveClient()">Save Client</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Client Details Modal -->
+<div class="modal fade" id="clientDetailsModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Client Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body" id="clientDetailsContent">
+                <!-- Content will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// Search and filter functionality
+document.getElementById('searchInput').addEventListener('input', filterClients);
+document.getElementById('typeFilter').addEventListener('change', filterClients);
+
+function filterClients() {
+    const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+    const typeFilter = document.getElementById('typeFilter').value.toLowerCase();
+    const rows = document.querySelectorAll('#clientsTable tbody tr');
+    
+    rows.forEach(row => {
+        const name = row.cells[1].textContent.toLowerCase();
+        const email = row.cells[3].textContent.toLowerCase();
+        const type = row.cells[2].textContent.toLowerCase();
+        
+        const matchesSearch = name.includes(searchTerm) || email.includes(searchTerm);
+        const matchesType = !typeFilter || type.includes(typeFilter);
+        
+        row.style.display = matchesSearch && matchesType ? '' : 'none';
+    });
+}
+
+function showAddClientModal() {
+    new bootstrap.Modal(document.getElementById('addClientModal')).show();
+}
+
+function saveClient() {
+    // This would integrate with the backend API
+    showAlert('Client saved successfully!', 'success');
+    bootstrap.Modal.getInstance(document.getElementById('addClientModal')).hide();
+}
+
+function viewClient(clientId) {
+    // Load client details
+    document.getElementById('clientDetailsContent').innerHTML = `
+        <div class="text-center py-4">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    `;
+    
+    new bootstrap.Modal(document.getElementById('clientDetailsModal')).show();
+    
+    // Simulate loading client details
+    setTimeout(() => {
+        document.getElementById('clientDetailsContent').innerHTML = `
+            <div class="row">
+                <div class="col-md-6">
+                    <h6>Basic Information</h6>
+                    <p><strong>Client ID:</strong> ${clientId}</p>
+                    <p><strong>Type:</strong> Individual</p>
+                    <p><strong>Status:</strong> <span class="badge bg-success">Active</span></p>
+                </div>
+                <div class="col-md-6">
+                    <h6>Contact Information</h6>
+                    <p><strong>Email:</strong> client@example.com</p>
+                    <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12">
+                    <h6>IP Portfolio Summary</h6>
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <h4 class="text-primary">3</h4>
+                            <small>Patents</small>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <h4 class="text-success">2</h4>
+                            <small>Trademarks</small>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <h4 class="text-warning">5</h4>
+                            <small>Deadlines</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+    }, 1000);
+}
+
+function editClient(clientId) {
+    showAlert(`Edit functionality for client ${clientId} would be implemented here`, 'info');
+}
+
+function viewClientMatters(clientId) {
+    showAlert(`Viewing IP matters for client ${clientId}`, 'info');
+    // This would navigate to a filtered view of patents/trademarks for this client
+}
+
+function exportClients() {
+    showAlert('Exporting client data...', 'info');
+    // This would trigger a CSV/Excel export
+}
+</script>
+{% endblock %}

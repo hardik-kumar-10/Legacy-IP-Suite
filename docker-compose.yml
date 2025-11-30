@@ -1,0 +1,35 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: ipms_postgres
+    environment:
+      POSTGRES_USER: ipms_user
+      POSTGRES_PASSWORD: ipms_pass
+      POSTGRES_DB: ipms
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+  adminer:
+    image: adminer:4
+    container_name: ipms_adminer
+    depends_on:
+      - postgres
+    ports:
+      - "8080:8080"
+  mysql:
+    image: mysql:8
+    container_name: legacy_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: legacy_ipms
+      MYSQL_USER: legacy_user
+      MYSQL_PASSWORD: legacy_pass
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysqldata:/var/lib/mysql
+      - ./schema/legacy_mysql.sql:/docker-entrypoint-initdb.d/1_legacy_mysql.sql:ro
+volumes:
+  pgdata:
+  mysqldata:

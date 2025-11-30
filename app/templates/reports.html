@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0"><i class="fas fa-chart-bar me-2"></i>IP Portfolio Analytics</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <canvas id="patentStatusChart" width="400" height="200"></canvas>
+                    </div>
+                    <div class="col-md-6">
+                        <canvas id="trademarkStatusChart" width="400" height="200"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h6 class="card-title mb-0">System Statistics</h6>
+            </div>
+            <div class="card-body">
+                <div class="row text-center">
+                    <div class="col-6 mb-3">
+                        <h4 class="text-primary">{{ stats.clients }}</h4>
+                        <small>Total Clients</small>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <h4 class="text-success">{{ stats.patents }}</h4>
+                        <small>Patents</small>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <h4 class="text-warning">{{ stats.trademarks }}</h4>
+                        <small>Trademarks</small>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <h4 class="text-danger">{{ stats.deadlines }}</h4>
+                        <small>Deadlines</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h6 class="card-title mb-0">Data Quality Metrics</h6>
+            </div>
+            <div class="card-body">
+                <div class="text-center">
+                    <div class="quality-score quality-poor">48.7%</div>
+                    <small class="text-muted">Overall Quality Score</small>
+                </div>
+                <div class="mt-3">
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Clients:</span>
+                        <span class="badge bg-warning">49.3%</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Patents:</span>
+                        <span class="badge bg-danger">22.4%</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Trademarks:</span>
+                        <span class="badge bg-warning">53.0%</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Deadlines:</span>
+                        <span class="badge bg-success">70.0%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// Create charts
+const patentCtx = document.getElementById('patentStatusChart').getContext('2d');
+new Chart(patentCtx, {
+    type: 'doughnut',
+    data: {
+        labels: ['Pending', 'Granted', 'Abandoned', 'Expired'],
+        datasets: [{
+            data: [45, 30, 15, 10],
+            backgroundColor: ['#ffc107', '#28a745', '#dc3545', '#6c757d']
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            title: {
+                display: true,
+                text: 'Patent Status Distribution'
+            }
+        }
+    }
+});
+
+const trademarkCtx = document.getElementById('trademarkStatusChart').getContext('2d');
+new Chart(trademarkCtx, {
+    type: 'doughnut',
+    data: {
+        labels: ['Pending', 'Registered', 'Opposed', 'Cancelled'],
+        datasets: [{
+            data: [40, 35, 15, 10],
+            backgroundColor: ['#ffc107', '#28a745', '#fd7e14', '#dc3545']
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            title: {
+                display: true,
+                text: 'Trademark Status Distribution'
+            }
+        }
+    }
+});
+</script>
+{% endblock %}

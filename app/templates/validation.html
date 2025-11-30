@@ -1,0 +1,197 @@
+{% extends "base.html" %}
+
+{% block page_actions %}
+<button class="btn btn-primary" onclick="runValidation()">
+    <i class="fas fa-play me-1"></i>Run Validation
+</button>
+{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-md-12">
+        {% if latest %}
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-check-circle me-2"></i>Latest Validation Report
+                    <span class="badge bg-secondary ms-2">{{ latest.validation_timestamp[:19] | replace('T', ' ') }}</span>
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row mb-4">
+                    <div class="col-md-3 text-center">
+                        <div class="quality-score {% if latest.system_quality_score >= 90 %}quality-excellent{% elif latest.system_quality_score >= 70 %}quality-good{% else %}quality-poor{% endif %}">
+                            {{ latest.system_quality_score }}%
+                        </div>
+                        <h6 class="mt-2">Overall Quality Score</h6>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="row">
+                            {% for entity, result in latest.results.items() %}
+                            <div class="col-md-6 mb-3">
+                                <div class="card border-0 bg-light">
+                                    <div class="card-body py-2">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <h6 class="card-title mb-1 text-capitalize">{{ entity }}</h6>
+                                                <small class="text-muted">{{ result.record_count }} records</small>
+                                            </div>
+                                            <div class="text-end">
+                                                <span class="badge {% if result.overall_score >= 90 %}bg-success{% elif result.overall_score >= 70 %}bg-warning{% else %}bg-danger{% endif %} fs-6">
+                                                    {{ result.overall_score }}%
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Detailed Issues -->
+                <div class="row">
+                    {% for entity, result in latest.results.items() %}
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h6 class="card-title mb-0 text-capitalize">{{ entity }} Issues</h6>
+                            </div>
+                            <div class="card-body">
+                                {% if result.quality_metrics and result.quality_metrics.issues %}
+                                <h6 class="text-warning">Data Quality Issues:</h6>
+                                <ul class="list-unstyled">
+                                    {% for issue in result.quality_metrics.issues %}
+                                    <li><i class="fas fa-exclamation-triangle text-warning me-2"></i>{{ issue }}</li>
+                                    {% endfor %}
+                                </ul>
+                                {% endif %}
+                                
+                                {% if result.business_validation and result.business_validation.errors %}
+                                <h6 class="text-danger">Business Rule Violations:</h6>
+                                <ul class="list-unstyled">
+                                    {% for error in result.business_validation.errors[:3] %}
+                                    <li><i class="fas fa-times-circle text-danger me-2"></i>{{ error.message }}</li>
+                                    {% endfor %}
+                                    {% if result.business_validation.errors|length > 3 %}
+                                    <li><i class="fas fa-ellipsis-h me-2"></i>{{ result.business_validation.errors|length - 3 }} more issues...</li>
+                                    {% endif %}
+                                </ul>
+                                {% endif %}
+                                
+                                {% if not (result.quality_metrics and result.quality_metrics.issues) and not (result.business_validation and result.business_validation.errors) %}
+                                <div class="text-center text-success">
+                                    <i class="fas fa-check-circle fa-2x mb-2"></i>
+                                    <p>No issues found</p>
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        {% else %}
+        <div class="card">
+            <div class="card-body text-center py-5">
+                <i class="fas fa-exclamation-triangle fa-4x text-warning mb-4"></i>
+                <h4>No Validation Data Available</h4>
+                <p class="text-muted">Run your first validation to assess data quality</p>
+                <button class="btn btn-primary btn-lg" onclick="runValidation()">
+                    <i class="fas fa-play me-2"></i>Run First Validation
+                </button>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+{% if reports %}
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0"><i class="fas fa-history me-2"></i>Validation History</h5>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Overall Score</th>
+                                <th>Entities</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for report in reports %}
+                            <tr>
+                                <td>{{ report.validation_timestamp[:19] | replace('T', ' ') }}</td>
+                                <td>
+                                    <span class="badge {% if report.system_quality_score >= 90 %}bg-success{% elif report.system_quality_score >= 70 %}bg-warning{% else %}bg-danger{% endif %}">
+                                        {{ report.system_quality_score }}%
+                                    </span>
+                                </td>
+                                <td>{{ report.entities_validated }}</td>
+                                <td>
+                                    {% if report.system_quality_score >= 90 %}
+                                    <span class="badge bg-success">Excellent</span>
+                                    {% elif report.system_quality_score >= 70 %}
+                                    <span class="badge bg-warning">Good</span>
+                                    {% else %}
+                                    <span class="badge bg-danger">Poor</span>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary" onclick="viewReport('{{ report.filename }}')">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+<script>
+async function runValidation() {
+    const button = event.target;
+    const originalText = button.innerHTML;
+    
+    button.disabled = true;
+    button.innerHTML = '<i class="fas fa-spinner fa-spin me-1"></i>Running...';
+    
+    try {
+        const result = await apiCall('/api/validation/run', { method: 'POST' });
+        showAlert('Validation started successfully. This page will refresh when complete.', 'success');
+        
+        // Poll for completion and refresh
+        setTimeout(() => {
+            window.location.reload();
+        }, 5000);
+        
+    } catch (error) {
+        showAlert('Failed to start validation', 'danger');
+    } finally {
+        button.disabled = false;
+        button.innerHTML = originalText;
+    }
+}
+
+function viewReport(filename) {
+    showAlert(`Viewing report ${filename}`, 'info');
+    // This would show detailed report in a modal
+}
+</script>
+{% endblock %}

@@ -1,0 +1,15 @@
+{
+  "generation_date": "2025-09-02T17:33:33.308774",
+  "counts": {
+    "clients": 500,
+    "patents": 1200,
+    "trademarks": 800,
+    "deadlines": 5044
+  },
+  "files_generated": [
+    "clients.csv",
+    "patents.csv",
+    "trademarks.csv",
+    "deadlines.csv"
+  ]
+}

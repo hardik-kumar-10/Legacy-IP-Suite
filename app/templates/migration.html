@@ -1,0 +1,412 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0"><i class="fas fa-exchange-alt me-2"></i>Legacy to Modern IPMS Migration</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6><i class="fas fa-database me-2 text-primary"></i>Source: Legacy MySQL Database</h6>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Denormalized structure</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Inconsistent data formats</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Quality issues typical of legacy systems</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h6><i class="fas fa-server me-2 text-success"></i>Target: Modern PostgreSQL Database</h6>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Properly normalized schema</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Referential integrity</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Modern data types and constraints</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0"><i class="fas fa-cogs me-2"></i>ETL Pipeline Status</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <i class="fas fa-download fa-2x text-primary mb-2"></i>
+                                <h6>Extract</h6>
+                                <span class="badge bg-success">Ready</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <i class="fas fa-cogs fa-2x text-warning mb-2"></i>
+                                <h6>Transform</h6>
+                                <span class="badge bg-success">Ready</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <i class="fas fa-upload fa-2x text-success mb-2"></i>
+                                <h6>Load</h6>
+                                <span class="badge bg-success">Ready</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <i class="fas fa-check-circle fa-2x text-info mb-2"></i>
+                                <h6>Validate</h6>
+                                <span class="badge bg-success">Ready</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0"><i class="fas fa-play-circle me-2"></i>Migration Control Panel</h5>
+            </div>
+            <div class="card-body">
+                <div class="alert alert-info">
+                    <i class="fas fa-info-circle me-2"></i>
+                    <strong>Demo Mode:</strong> This migration tool demonstrates the ETL process using CSV files instead of live databases.
+                    In production, this would connect to actual MySQL and PostgreSQL instances.
+                </div>
+                
+                <div class="d-grid gap-3">
+                    <button class="btn btn-outline-primary btn-lg" onclick="startMigration('dry-run')">
+                        <i class="fas fa-eye me-2"></i>Dry Run Migration
+                        <br><small>Preview migration without making changes</small>
+                    </button>
+                    
+                    <button class="btn btn-primary btn-lg" onclick="startMigration('full')" disabled>
+                        <i class="fas fa-play me-2"></i>Start Full Migration
+                        <br><small>Migrate all data to modern database</small>
+                    </button>
+                    
+                    <button class="btn btn-outline-warning btn-lg" onclick="startMigration('incremental')" disabled>
+                        <i class="fas fa-sync me-2"></i>Incremental Migration
+                        <br><small>Migrate only changed records</small>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0"><i class="fas fa-chart-pie me-2"></i>Migration Statistics</h5>
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between">
+                        <span>Clients:</span>
+                        <strong>500 records</strong>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between">
+                        <span>Patents:</span>
+                        <strong>1,200 records</strong>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between">
+                        <span>Trademarks:</span>
+                        <strong>800 records</strong>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between">
+                        <span>Deadlines:</span>
+                        <strong>5,044 records</strong>
+                    </div>
+                </div>
+                <hr>
+                <div class="text-center">
+                    <strong>Total: 7,544 records</strong>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card mt-3">
+            <div class="card-header">
+                <h6 class="card-title mb-0"><i class="fas fa-exclamation-triangle me-2"></i>Data Quality</h6>
+            </div>
+            <div class="card-body">
+                <div class="text-center">
+                    <div class="quality-score quality-poor">48.7%</div>
+                    <small class="text-muted">Quality Score</small>
+                </div>
+                <div class="mt-3">
+                    <small class="text-warning">
+                        <i class="fas fa-exclamation-triangle me-1"></i>
+                        Quality issues detected. Consider running data cleanup before migration.
+                    </small>
+                </div>
+                <div class="mt-2">
+                    <a href="/validation" class="btn btn-sm btn-outline-warning">
+                        View Details
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0"><i class="fas fa-history me-2"></i>Migration History</h5>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Records</th>
+                                <th>Duration</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2024-09-02 17:30:00</td>
+                                <td><span class="badge bg-info">Dry Run</span></td>
+                                <td>7,544</td>
+                                <td>2m 15s</td>
+                                <td><span class="badge bg-success">Completed</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2024-09-02 16:45:00</td>
+                                <td><span class="badge bg-primary">Full</span></td>
+                                <td>7,544</td>
+                                <td>5m 32s</td>
+                                <td><span class="badge bg-warning">Partial</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Migration Progress Modal -->
+<div class="modal fade" id="migrationProgressModal" tabindex="-1" data-bs-backdrop="static">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="fas fa-cogs me-2"></i>Migration in Progress</h5>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label class="form-label">Overall Progress</label>
+                    <div class="progress mb-2">
+                        <div class="progress-bar" id="overallProgress" role="progressbar" style="width: 0%"></div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <small class="text-muted" id="progressText">Initializing...</small>
+                        <small class="text-muted" id="progressPercent">0%</small>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>Entity Progress</h6>
+                        <div class="mb-2">
+                            <div class="d-flex justify-content-between">
+                                <span>Clients</span>
+                                <span class="badge bg-secondary" id="clientsStatus">Pending</span>
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <div class="d-flex justify-content-between">
+                                <span>Patents</span>
+                                <span class="badge bg-secondary" id="patentsStatus">Pending</span>
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <div class="d-flex justify-content-between">
+                                <span>Trademarks</span>
+                                <span class="badge bg-secondary" id="trademarksStatus">Pending</span>
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <div class="d-flex justify-content-between">
+                                <span>Deadlines</span>
+                                <span class="badge bg-secondary" id="deadlinesStatus">Pending</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Migration Log</h6>
+                        <div class="border rounded p-2" style="height: 200px; overflow-y: auto; background-color: #f8f9fa;">
+                            <div id="migrationLog" style="font-family: monospace; font-size: 0.8rem;">
+                                <!-- Log messages will appear here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="cancelMigration">Cancel</button>
+                <button type="button" class="btn btn-primary" id="closeMigration" style="display: none;">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function startMigration(type) {
+    const modal = new bootstrap.Modal(document.getElementById('migrationProgressModal'));
+    modal.show();
+    
+    // Reset progress
+    document.getElementById('overallProgress').style.width = '0%';
+    document.getElementById('progressText').textContent = 'Initializing...';
+    document.getElementById('progressPercent').textContent = '0%';
+    document.getElementById('migrationLog').innerHTML = '';
+    
+    // Reset status badges
+    ['clientsStatus', 'patentsStatus', 'trademarksStatus', 'deadlinesStatus'].forEach(id => {
+        document.getElementById(id).className = 'badge bg-secondary';
+        document.getElementById(id).textContent = 'Pending';
+    });
+    
+    // Simulate migration progress
+    simulateMigration(type);
+}
+
+function simulateMigration(type) {
+    const log = document.getElementById('migrationLog');
+    const entities = ['clients', 'patents', 'trademarks', 'deadlines'];
+    let currentStep = 0;
+    
+    function addLogMessage(message, type = 'info') {
+        const timestamp = new Date().toLocaleTimeString();
+        const messageDiv = document.createElement('div');
+        messageDiv.innerHTML = `<span class="text-muted">[${timestamp}]</span> ${message}`;
+        log.appendChild(messageDiv);
+        log.scrollTop = log.scrollHeight;
+    }
+    
+    function updateProgress(percent, text) {
+        document.getElementById('overallProgress').style.width = percent + '%';
+        document.getElementById('progressPercent').textContent = percent + '%';
+        document.getElementById('progressText').textContent = text;
+    }
+    
+    function processEntity(entityIndex) {
+        if (entityIndex >= entities.length) {
+            // Migration complete
+            updateProgress(100, 'Migration completed successfully!');
+            addLogMessage('✅ Migration completed successfully', 'success');
+            
+            document.getElementById('cancelMigration').style.display = 'none';
+            document.getElementById('closeMigration').style.display = 'block';
+            
+            showAlert(`${type} migration completed successfully!`, 'success');
+            return;
+        }
+        
+        const entity = entities[entityIndex];
+        const statusId = entity + 'Status';
+        
+        // Update status to processing
+        document.getElementById(statusId).className = 'badge bg-warning';
+        document.getElementById(statusId).textContent = 'Processing';
+        
+        addLogMessage(`📊 Starting ${entity} migration...`);
+        updateProgress((entityIndex / entities.length) * 100, `Processing ${entity}...`);
+        
+        // Simulate processing time
+        setTimeout(() => {
+            addLogMessage(`✅ ${entity} migration completed (${getEntityCount(entity)} records)`);
+            
+            // Update status to completed
+            document.getElementById(statusId).className = 'badge bg-success';
+            document.getElementById(statusId).textContent = 'Completed';
+            
+            // Process next entity
+            setTimeout(() => processEntity(entityIndex + 1), 500);
+        }, Math.random() * 2000 + 1000);
+    }
+    
+    function getEntityCount(entity) {
+        const counts = {
+            'clients': '500',
+            'patents': '1,200',
+            'trademarks': '800',
+            'deadlines': '5,044'
+        };
+        return counts[entity] || '0';
+    }
+    
+    // Start migration
+    addLogMessage(`🚀 Starting ${type} migration...`);
+    addLogMessage('📋 Validating source data...');
+    
+    setTimeout(() => {
+        addLogMessage('✅ Source data validation completed');
+        addLogMessage('🔧 Initializing ETL pipeline...');
+        
+        setTimeout(() => {
+            addLogMessage('✅ ETL pipeline initialized');
+            processEntity(0);
+        }, 1000);
+    }, 1000);
+}
+
+document.getElementById('cancelMigration').addEventListener('click', function() {
+    if (confirm('Are you sure you want to cancel the migration?')) {
+        bootstrap.Modal.getInstance(document.getElementById('migrationProgressModal')).hide();
+        showAlert('Migration cancelled', 'warning');
+    }
+});
+
+document.getElementById('closeMigration').addEventListener('click', function() {
+    bootstrap.Modal.getInstance(document.getElementById('migrationProgressModal')).hide();
+    // Refresh the page to show updated statistics
+    setTimeout(() => window.location.reload(), 500);
+});
+</script>
+{% endblock %}
